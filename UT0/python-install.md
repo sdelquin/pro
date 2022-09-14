@@ -54,3 +54,11 @@ Podemos comprobar que la nueva versión quedó correctamente configurada:
 $ python --version
 Python 3.10.7
 ```
+
+## Instalación de paquetes
+
+[Black](https://black.readthedocs.io/en/stable/): formateador de código en Python.
+
+```console
+$ python -m pip install black
+```

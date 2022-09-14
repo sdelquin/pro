@@ -14,3 +14,10 @@ Instalar editor vim:
 ```console
 $ sudo apt install vim
 ```
+
+Añadir carpeta local al PATH:
+
+```console
+$ echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+$ source ~/.bashrc
+```
