@@ -57,8 +57,9 @@ Python 3.10.7
 
 ## Instalación de paquetes
 
-[Black](https://black.readthedocs.io/en/stable/): formateador de código en Python.
+- [Black](https://black.readthedocs.io/en/stable/): formateador de código en Python.
+- [IPython](https://ipython.org/): consola interactiva "vitaminada" para Python.
 
 ```console
-$ python -m pip install black
+$ python -m pip install black ipython
 ```
