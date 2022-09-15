@@ -19,6 +19,12 @@ Instalar editor vim:
 $ sudo apt install vim
 ```
 
+Configuraciones básicas de vim:
+
+```console
+$ wget https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc
+```
+
 ## Path
 
 Añadir carpeta local al PATH:
