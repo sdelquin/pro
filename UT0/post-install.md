@@ -11,18 +11,37 @@ $ addgroup <usuario> sudo
 
 > Salir de la sesión y volver a entrar para que los cambios surtan efecto.
 
+## Herramientas varias
+
+```console
+$ sudo apt install -y curl git
+```
+
 ## Vim
 
 Instalar editor vim:
 
 ```console
-$ sudo apt install vim
+$ sudo apt install -y vim
+```
+
+### Vim plug
+
+```console
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Configuraciones básicas de vim:
 
 ```console
-$ wget https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc
+$ curl https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc -o ~/.vimrc
+```
+
+Instalar los plugins:
+
+```console
+$ vi +'PlugInstall --sync' +qa
 ```
 
 ## Path
@@ -37,7 +56,7 @@ $ source ~/.bashrc
 ## Aspecto agradable
 
 ```console
-$ sudo apt install materia-gtk-theme papirus-icon-theme
+$ sudo apt install -y materia-gtk-theme papirus-icon-theme
 ```
 
 Para establecer el **tema**:

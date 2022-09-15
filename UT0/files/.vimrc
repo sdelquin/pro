@@ -1,3 +1,7 @@
+call plug#begin()
+Plug 'vim-airline/vim-airline'
+call plug#end()
+
 syntax on
 set ts=4
 set sw=4
