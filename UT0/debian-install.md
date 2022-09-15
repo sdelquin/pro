@@ -6,11 +6,12 @@ En la búsqueda de un sistema operativo que consuma pocos recursos y que nos pro
 
 ## Preparación
 
-1. Descargar la imagen del sistema operativo [Debian 11 Netinst AMD64](https://www3.gobiernodecanarias.org/medusa/eforma/campus/mod/url/view.php?id=5010751).
+1. Descargar la imagen del sistema operativo [Debian 11 Netinst AMD64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso).
 2. Abrir VirtualBox y crear una VM con la siguientes características:
-   - RAM: 2GB
-   - Disco duro: 20GB
-3. Seleccionar la imagen del sistema operativo para el CD y arrancar la VM.
+   - RAM: 4GB
+   - Disco duro: 30GB
+3. Cambiar el adaptador de red a modo "Bridge".
+4. Seleccionar la imagen del sistema operativo para el CD y arrancar la VM.
 
 ## Instalación
 
@@ -21,7 +22,7 @@ _(utilizar las teclas de cursor, ya que el ratón no funciona durante la instala
 3. Seleccionar país _España_.
 4. Seleccionar teclado _Español_.
 5. Introducir el nombre de la máquina.
-6. Introducir el nombre del dominio: dejar el que viene por defecto `localdomain`.
+6. Introducir el nombre del dominio: dejar el que viene por defecto (pulsar ENTER).
 7. Introducir la clave de superusuario (`root`). ¡No la olvides!
 8. Volver a confirmar la clave de superusuario.
 9. Crear cuenta de usuario "ordinario":
@@ -42,7 +43,7 @@ _(utilizar las teclas de cursor, ya que el ratón no funciona durante la instala
     - Réplica de Debian: _deb.debian.org_
     - Proxy HTTP: _Dejar en blanco_ (pulsar ENTER)
     - ¿Desea participar en la encuesta sobre el uso de paquetes? _No_.
-13. Elegir los programas a instalar. Marcar lo siguiente (utilizando los cursores y la barra espaciadora):
+13. Elegir los programas a instalar. Marcar ÚNICAMENTE lo siguiente (utilizando los cursores y la barra espaciadora):
     - Xfce.
     - SSH Server.
     - Utilidades estándar del sistema.
