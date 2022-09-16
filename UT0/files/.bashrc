@@ -118,3 +118,4 @@ fi
 
 export PATH=~/.local/bin:$PATH
 alias ll='ls -ltrh'
+bind 'set enable-bracketed-paste off'
