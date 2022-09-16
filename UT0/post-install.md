@@ -8,7 +8,7 @@ $ sudo apt install -y curl git
 
 ## Vim
 
-Instalar editor vim:
+Instalar editor [vim](https://es.wikipedia.org/wiki/Vim):
 
 ```console
 $ sudo apt install -y vim
@@ -21,7 +21,7 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Configuraciones básicas de vim:
+Configuraciones básicas de vim → [.vimrc](files/.vimrc)
 
 ```console
 $ curl https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc -o ~/.vimrc
@@ -33,12 +33,12 @@ Instalar los plugins:
 $ vi +'PlugInstall --sync' +qa
 ```
 
-## Path
+## `.bashrc`
 
-Añadir carpeta local al PATH:
+Configuraciones a nivel de usuario → [.bashrc](files/.bashrc)
 
 ```console
-$ echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+$ curl https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.bashrc -o ~/.bashrc
 $ source ~/.bashrc
 ```
 
