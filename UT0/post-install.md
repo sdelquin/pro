@@ -56,3 +56,9 @@ Para establecer el **tema**:
 Para establecer el paquete de **iconos**:
 
 - Aplicaciones → Configuración → Apariencia → Iconos → Papirus
+
+## Desactivar confirmación de pegado inseguro
+
+Abrimos la **terminal** y vamos al menú:
+
+- Editar → Preferencias → General → Mostrar diálogo de pensar inseguro (desactivar)
