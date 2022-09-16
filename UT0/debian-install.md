@@ -62,3 +62,20 @@ _(utilizar las teclas de cursor, ya que el ratón no funciona durante la instala
     - Utilidades estándar del sistema.  
       _(utilizar el tabulador y luego ENTER para continuar)_
 14. Instalación completada: _Extraer el medio de instalación y continuar_.
+
+## Sudoers
+
+Por defecto, el único usuario que tiene "superpoderes" en Linux es `root` (superusuario). Pero nos puede venir bien que nuestro usuario "ordinario" también sea un superhéroe. Para ello debemos hacerlo _sudoer_.
+
+Después de arrancar la máquina virtual que acabamos de crear, iniciamos sesión con nuestro usuario "ordinario", abrimos una **terminal** y ejecutamos lo siguiente:
+
+![Terminal](files/terminal.png)
+
+```console
+$ su -l
+$ addgroup <tu-usuario> sudo
+```
+
+> No incluyas los angulitos `<` `>` en la instrucción, sustituye por el nombre de usuario.
+
+A continuación debes **salir de la sesión y volver a entrar** para que los cambios surtan efecto.

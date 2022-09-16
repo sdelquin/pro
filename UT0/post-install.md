@@ -1,16 +1,5 @@
 # Pasos posteriores a la instalación
 
-## Sudoers
-
-Dar permisos de superusuario al `<usuario>` ordinario que creamos durante la instalación del sistema operativo:
-
-```console
-$ su -l
-$ addgroup <usuario> sudo
-```
-
-> Salir de la sesión y volver a entrar para que los cambios surtan efecto.
-
 ## Herramientas varias
 
 ```console
