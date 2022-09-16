@@ -7,11 +7,24 @@ En la búsqueda de un sistema operativo que consuma pocos recursos y que nos pro
 ## Preparación
 
 1. Descargar la imagen del sistema operativo [Debian 11 Netinst AMD64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso).
-2. Abrir VirtualBox y crear una VM con la siguientes características:
-   - RAM: 4GB
-   - Disco duro: 30GB
-3. Cambiar el adaptador de red a modo "Bridge".
-4. Seleccionar la imagen del sistema operativo para el CD y arrancar la VM.
+2. Abrir VirtualBox y crear una **nueva máquina virtual** con las siguientes características:
+
+| Parámetro | Valor                       |
+| --------- | --------------------------- |
+| Nombre    | Debian PRO                  |
+| Carpeta   | _(la que está por defecto)_ |
+| Tipo      | Linux                       |
+| Versión   | Debian (64-bit)             |
+| RAM       | 4096MB                      |
+
+3. Disco duro → Crear un disco duro virtual ahora
+4. Tipo de archivo de disco duro → VDI
+5. Almacenamiento en unidad de disco duro → Tamaño fijo
+6. Tamaño del disco duro → 30GB
+7. Disco duro → Crear un disco duro virtual ahora
+8. Una vez creada la máquina, botón derecho: Configuración → Red → Adaptador 1 → Conectado a: Adaptador puente
+
+**Arrancar la máquina virtual**. En este momento nos pedirá que elijamos un disco de inicio. En el botón de selección hay que localizar la imagen que hemos descargado `.iso` (probablemente estará en la carpeta Descargas).
 
 ## Instalación
 
@@ -43,9 +56,9 @@ _(utilizar las teclas de cursor, ya que el ratón no funciona durante la instala
     - Réplica de Debian: _deb.debian.org_
     - Proxy HTTP: _Dejar en blanco_ (pulsar ENTER)
     - ¿Desea participar en la encuesta sobre el uso de paquetes? _No_.
-13. Elegir los programas a instalar. Marcar ÚNICAMENTE lo siguiente (utilizando los cursores y la barra espaciadora):
+13. Elegir los programas a instalar. **Marcar ÚNICAMENTE lo siguiente** (utilizando los cursores y la barra espaciadora) _Desmarcar lo que no corresponda_:
     - Xfce.
     - SSH Server.
-    - Utilidades estándar del sistema.
-    - _(utilizar el tabulador y luego ENTER para continuar)_
+    - Utilidades estándar del sistema.  
+      _(utilizar el tabulador y luego ENTER para continuar)_
 14. Instalación completada: _Extraer el medio de instalación y continuar_.
