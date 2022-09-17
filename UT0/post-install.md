@@ -61,4 +61,4 @@ Para establecer el paquete de **iconos**:
 
 Abrimos la **terminal** y vamos al menú:
 
-- Editar → Preferencias → General → Mostrar diálogo de pensar inseguro (desactivar)
+- Editar → Preferencias → General → Mostrar diálogo de pegar inseguro (desactivar)

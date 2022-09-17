@@ -36,12 +36,12 @@ Apagamos la máquina virtual:
 $ sudo poweroff
 ```
 
-Con la máquina apagada, vamos a desmontar la imagen de las "Guest Additions". Para ello:
+Con la máquina apagada, vamos a **desmontar la imagen** de las "Guest Additions". Para ello:
 
 1. _Configuración → Almacenamiento → Controlador IDE → Unidad óptica_
 2. _Botón derecho sobre el símbolo del CD junto a "Unidad Óptica" → Dejar vacío_
 
-Ahora activamos el uso del portapapeles en modo bidireccional. Para ello:
+Ahora activamos el **uso del portapapeles** en modo bidireccional. Para ello:
 
 - _Configuración → General → Avanzado → Compartir portapapeles → Bidireccional_
 - _Configuración → General → Avanzado → Arrastrar y soltar → Bidireccional_

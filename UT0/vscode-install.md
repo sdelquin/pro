@@ -19,7 +19,7 @@ $ sudo apt install ./vscode.deb
 Comprobamos que la instalación ha sido satisfactoria:
 
 ```console
-$ vscode --version
+$ code --version
 1.71.1
 e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb
 amd64
