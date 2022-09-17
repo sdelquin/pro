@@ -33,6 +33,8 @@ Instalar los plugins:
 $ vi +'PlugInstall --sync' +qa
 ```
 
+> vim se abrirá de manera automática, instalará los plugins y se volverá a cerrar. No tocar nada hasta que vuelva a la terminal.
+
 ## `.bashrc`
 
 Configuraciones a nivel de usuario → [.bashrc](files/.bashrc)
