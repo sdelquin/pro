@@ -5,14 +5,13 @@
 Creamos una carpeta temporal y descargamos la última versión disponible de VSCode:
 
 ```console
-$ cd /tmp
-$ wget "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -O vscode.deb
+$ curl "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -o /tmp/vscode.deb
 ```
 
 Instalamos el paquete:
 
 ```console
-$ sudo apt install ./vscode.deb
+$ sudo apt install /tmp/vscode.deb
 ...
 ```
 
