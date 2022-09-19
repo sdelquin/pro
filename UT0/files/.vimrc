@@ -3,7 +3,7 @@
 "To uninstall a plugin: comment/delete plugin line, type :so % and run :PlugClean
 call plug#begin()
     Plug 'vim-airline/vim-airline'
-    Plug 'kien/ctrlp'
+    Plug 'kien/ctrlp.vim'
 call plug#end()
 
 syntax on
