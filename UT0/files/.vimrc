@@ -2,14 +2,21 @@
 "After adding a new plugin, type :so % to reload this file and run :PlugInstall
 "To uninstall a plugin: comment/delete plugin line, type :so % and run :PlugClean
 call plug#begin()
-    Plug 'vim-airline/vim-airline'
-    Plug 'kien/ctrlp.vim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'kien/ctrlp.vim'
+  Plug 'morhetz/gruvbox'
 call plug#end()
 
+colorscheme gruvbox
+
 syntax on
-set ts=4
-set sw=4
+set tabstop=4
+set shiftwidth=4
 set expandtab
-set ai
+set autoindent
+set ignorecase
+set cursorline
+set number
+set background=dark
 
 nnoremap dl :t.<CR>
