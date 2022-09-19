@@ -11,3 +11,5 @@ set ts=4
 set sw=4
 set expandtab
 set ai
+
+nnoremap dl :t.<CR>
