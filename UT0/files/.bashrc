@@ -117,6 +117,7 @@ fi
 # ******************************************************
 
 export PATH=~/.local/bin:$PATH
+export EDITOR=/usr/bin/vim
 alias ll='ls -ltrh'
 bind 'set enable-bracketed-paste off'
 
