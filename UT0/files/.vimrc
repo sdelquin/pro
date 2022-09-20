@@ -21,6 +21,7 @@ set number
 set background=dark
 
 nnoremap dl :t.<CR>
+nnoremap <F2> :e#<CR>
 
 " Settings per filetype
 autocmd Filetype html setlocal ts=2 sw=2
