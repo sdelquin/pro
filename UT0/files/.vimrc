@@ -4,10 +4,11 @@
 call plug#begin()
   Plug 'vim-airline/vim-airline'
   Plug 'kien/ctrlp.vim'
-  Plug 'morhetz/gruvbox'
+  Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
-colorscheme gruvbox
+"https://vimcolorschemes.com/
+colorscheme PaperColor
 
 syntax on
 set tabstop=4
@@ -20,3 +21,9 @@ set number
 set background=dark
 
 nnoremap dl :t.<CR>
+
+" Settings per filetype
+autocmd Filetype html setlocal ts=2 sw=2
+autocmd Filetype css setlocal ts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sw=2
+autocmd Filetype json setlocal ts=2 sw=2

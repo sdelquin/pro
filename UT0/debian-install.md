@@ -61,7 +61,10 @@ _(utilizar las teclas de cursor, ya que el ratón no funciona durante la instala
     - SSH Server.
     - Utilidades estándar del sistema.  
       _(utilizar el tabulador y luego ENTER para continuar)_
-14. Instalación completada: _Extraer el medio de instalación y continuar_.
+14. GRUB:
+    - ¿Desea instalar el cargador de arranque GRUB en su unidad principal? → _Sí_
+    - Dispositivo donde instalar el cargador de arranque: _/dev/sda_
+15. Instalación completada: _Continuar_
 
 ## Sudoers
 
@@ -72,10 +75,12 @@ Después de arrancar la máquina virtual que acabamos de crear, iniciamos sesió
 ![Terminal](files/terminal.png)
 
 ```console
-$ su -l
+$ su -l  # es una ele minúscula
 $ addgroup <tu-usuario> sudo
 ```
 
-> No incluyas los angulitos `<` `>` en la instrucción, sustituye por el nombre de usuario.
+> No incluyas los angulitos `<` `>` en la instrucción, sustituye por el nombre de tu usuario.
 
 A continuación debes **salir de la sesión y volver a entrar** para que los cambios surtan efecto.
+
+![Cerrar sesión](files/close-session.jpg)
