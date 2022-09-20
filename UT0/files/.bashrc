@@ -125,3 +125,8 @@ take() {
     dir=$@
     mkdir -p $dir && cd $dir
 }
+
+copy() {
+    xclip -sel c < $@
+}
+

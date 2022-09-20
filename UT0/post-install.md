@@ -3,7 +3,7 @@
 ## Herramientas varias
 
 ```console
-$ sudo apt install -y curl git tree
+$ sudo apt install -y curl git tree xclip
 ```
 
 ## Vim
