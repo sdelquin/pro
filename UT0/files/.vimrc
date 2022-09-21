@@ -22,6 +22,8 @@ set background=dark
 
 nnoremap dl :t.<CR>
 nnoremap <F2> :e#<CR>
+nnoremap vv ^vg_
+vnoremap <C-y> :'<,'>w !xclip -selection clipboard<Cr><Cr>
 
 " Settings per filetype
 autocmd Filetype html setlocal ts=2 sw=2

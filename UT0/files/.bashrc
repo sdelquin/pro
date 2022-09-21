@@ -127,6 +127,11 @@ take() {
 }
 
 copy() {
-    xclip -sel c < $@
+    if [ -z $@ ];
+    then
+        xclip -sel c
+    else
+        xclip -sel c < $@
+    fi
 }
 
