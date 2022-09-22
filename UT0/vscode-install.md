@@ -2,10 +2,10 @@
 
 ## Instalación
 
-Creamos una carpeta temporal y descargamos la última versión disponible de VSCode:
+Descargamos la última versión disponible de VSCode en una carpeta temporal:
 
 ```console
-$ curl "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -Lo /tmp/vscode.deb
+$ curl -fLo /tmp/vscode.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
 ```
 
 Comprobamos que el paquete se haya descargado correctamente:
@@ -48,7 +48,7 @@ $ code --install-extension ms-python.python
 Descargamos las configuraciones personalizadas para Visual Studio Code:
 
 ```console
-$ curl https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/settings.json -o ~/.config/Code/User/settings.json
+$ curl -fLo ~/.config/Code/User/settings.json https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/settings.json
 ```
 
 ## Apertura de la aplicación

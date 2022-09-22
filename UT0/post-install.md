@@ -24,7 +24,7 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 Configuraciones básicas de vim → [.vimrc](files/.vimrc)
 
 ```console
-$ curl https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc -o ~/.vimrc
+$ curl -fLo ~/.vimrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc
 ```
 
 Instalar los plugins:
@@ -40,7 +40,7 @@ $ vi +'PlugInstall --sync' +qa
 Configuraciones a nivel de usuario → [.bashrc](files/.bashrc)
 
 ```console
-$ curl https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.bashrc -o ~/.bashrc
+$ curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.bashrc
 $ source ~/.bashrc
 ```
 
