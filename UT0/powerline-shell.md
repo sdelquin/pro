@@ -2,7 +2,7 @@
 
 [Powerline Shell](https://github.com/b-ryan/powerline-shell) es un generador de _prompts_ bonitos y útiles para distintas _shells_.
 
-![Powerline shell](./files/powerline-shell.png)
+![Powerline shell](./images/powerline-shell.png)
 
 ## Instalación
 

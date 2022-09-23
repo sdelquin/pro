@@ -1,6 +1,6 @@
 # Instalación del sistema operativo
 
-![Debian Logo](files/debian-logo.jpg)
+![Debian Logo](images/debian-logo.jpg)
 
 En la búsqueda de un sistema operativo que consuma pocos recursos y que nos proporcione las herramientas que necesitamos, vamos a trabajar con [Debian](https://www.debian.org/index.es.html), un sistema operativo completamente libre que es un referente dentro del mundo Linux.
 
@@ -72,7 +72,7 @@ Por defecto, el único usuario que tiene "superpoderes" en Linux es `root` (supe
 
 Después de arrancar la máquina virtual que acabamos de crear, iniciamos sesión con nuestro usuario "ordinario", abrimos una **terminal** y ejecutamos lo siguiente:
 
-![Terminal](files/terminal.png)
+![Terminal](images/terminal.png)
 
 ```console
 $ su -l  # es una ele minúscula
@@ -83,4 +83,4 @@ $ addgroup <tu-usuario> sudo
 
 A continuación debes **salir de la sesión y volver a entrar** para que los cambios surtan efecto.
 
-![Cerrar sesión](files/close-session.jpg)
+![Cerrar sesión](images/close-session.jpg)

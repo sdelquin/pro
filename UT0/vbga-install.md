@@ -14,7 +14,7 @@ Para habilitar funciones como el ajuste del tamaño de la ventana o la función 
 Necesitamos instalar una serie de paquetes previos:
 
 ```console
-$ sudo apt install dkms linux-headers-$(uname -r) build-essential
+sudo apt install dkms linux-headers-$(uname -r) build-essential
 ```
 
 ## Instalación
@@ -22,10 +22,8 @@ $ sudo apt install dkms linux-headers-$(uname -r) build-essential
 Ahora ya podemos montar la unidad de CDROM y lanzar el instalador de las "Guest Additions" de VirtualBox:
 
 ```console
-$ sudo mount /dev/cdrom /mnt  # No te preocupes por el mensaje de "Read Only"
-$ sudo sh /mnt/VBoxLinuxAdditions.run
-...
-...
+sudo mount /dev/cdrom /mnt  # No te preocupes por el mensaje de "Read Only"
+sudo sh /mnt/VBoxLinuxAdditions.run
 ```
 
 ## Pasos finales
@@ -33,7 +31,7 @@ $ sudo sh /mnt/VBoxLinuxAdditions.run
 Apagamos la máquina virtual:
 
 ```console
-$ sudo poweroff
+sudo poweroff
 ```
 
 Con la máquina apagada, vamos a **desmontar la imagen** de las "Guest Additions". Para ello:
@@ -41,7 +39,7 @@ Con la máquina apagada, vamos a **desmontar la imagen** de las "Guest Additions
 1. _Configuración → Almacenamiento → Controlador IDE → Unidad óptica_
 2. _Hacer clic sobre el símbolo del CD junto a "Unidad Óptica"_:
 
-![Disco IDE](files/disc-ide.jpg) → _Eliminar disco de la unidad virtual_
+![Disco IDE](images/disc-ide.jpg) → _Eliminar disco de la unidad virtual_
 
 Ahora activamos el **uso del portapapeles** en modo bidireccional. Para ello:
 
