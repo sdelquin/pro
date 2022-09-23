@@ -24,6 +24,9 @@ nnoremap dl :t.<CR>
 nnoremap <F2> :e#<CR>
 nnoremap vv ^vg_
 vnoremap <C-y> :'<,'>w !xclip -selection clipboard<Cr><Cr>
+vnoremap a y'>p
+
+let g:airline_powerline_fonts=1
 
 " Settings per filetype
 autocmd Filetype html setlocal ts=2 sw=2
