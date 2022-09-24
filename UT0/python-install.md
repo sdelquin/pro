@@ -54,9 +54,17 @@ python --version
 
 ## Instalación de paquetes
 
+Lo primero es asegurarnos de tener la última versión del instalador de paquetes:
+
+```console
+pip install -U pip
+```
+
+A continuación instalamos los paquetes que necesitamos para desarrollo:
+
 - [Black](https://black.readthedocs.io/en/stable/): formateador de código en Python.
 - [IPython](https://ipython.org/): consola interactiva "vitaminada" para Python.
 
 ```console
-python -m pip install black ipython
+pip install black ipython
 ```
