@@ -9,7 +9,7 @@
 Instalamos el paquete Python que da soporte a Powerline:
 
 ```console
-python -m pip install powerline-shell
+pip install powerline-shell
 ```
 
 Añadimos las configuraciones del prompt:
