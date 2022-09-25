@@ -120,6 +120,7 @@ export PATH=~/.local/bin:$PATH
 export EDITOR=/usr/bin/vim
 alias ll='ls -ltrh'
 alias pip='python -m pip'
+alias grep='grep --color'
 bind 'set enable-bracketed-paste off'
 
 take() {
