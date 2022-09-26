@@ -50,6 +50,26 @@ curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/file
 source ~/.bashrc
 ```
 
+## Copiar con selección
+
+Ahora vamos a habilitar la opción de copiar al portapapeles únicamente con seleccionar el texto.
+
+Lo primero es instalar el programa `autocutsel`:
+
+```console
+sudo apt install -y autocutsel
+```
+
+Ahora creamos un servicio para que funcione de manera permanente (y se active en el arranque):
+
+```console
+mkdir -p ~/.config/systemd/user
+curl -fLo ~/.config/systemd/user/autocutsel.service https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/autocutsel.service
+systemctl --user daemon-reload
+systemctl --user enable autocutsel
+systemctl --user start autocutsel
+```
+
 ## Aspecto agradable
 
 ```console
