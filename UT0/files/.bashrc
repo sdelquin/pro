@@ -137,3 +137,12 @@ copy() {
     fi
 }
 
+sudo() {
+    if [[ $1 == "vi" ]]; then
+        shift
+        command sudoedit "$@"
+    else
+        command sudo "$@"
+    fi
+}
+
