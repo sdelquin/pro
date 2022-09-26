@@ -88,5 +88,5 @@ Para establecer el paquete de **iconos**:
 ## Ajustes de Terminal
 
 ```console
-curl -fL https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/terminalrc >> ~/.config/xfce4/terminal/terminalrc
+curl -fLo ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/terminalrc
 ```
