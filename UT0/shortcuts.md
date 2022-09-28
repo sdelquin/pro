@@ -1,6 +1,6 @@
 # Atajos de teclado
 
-En esta sección vamos a hablar de atajos de teclado o "shortcuts". Nos permiten realizar acciones de manera más rápida que ya se llevan a cabo a través de combinaciones de teclas.
+En esta sección vamos a ver atajos de teclado o "shortcuts". Nos permiten realizar acciones de manera más rápida a través de combinaciones de teclas.
 
 ## Atajos en XFCE
 
