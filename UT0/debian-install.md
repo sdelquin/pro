@@ -36,11 +36,11 @@ _(utilizar las teclas de cursor, ya que el ratón no funciona durante la instala
 4. Seleccionar teclado _Español_.
 5. Introducir el nombre de la máquina.
 6. Introducir el nombre del dominio: dejar el que viene por defecto (pulsar ENTER).
-7. Introducir la clave de superusuario (`root`). ¡No la olvides!
+7. Introducir **la clave de superusuario** (`root`). **🚨 ¡No la olvides! 🚨**
 8. Volver a confirmar la clave de superusuario.
 9. Crear cuenta de usuario "ordinario":
    - Nombre completo indicando _nombre y apellidos_.
-   - Nombre de usuario: todo en minúsculas y sin espacios.
+   - Nombre de usuario: todo en minúsculas y sin espacios (No más de 8-10 caracteres).
    - Contraseña. ¡No la olvides!
    - Verificar la contraseña introducida.
 10. Introducir la zona horaria _Islas Canarias_.
@@ -75,8 +75,7 @@ Después de arrancar la máquina virtual que acabamos de crear, iniciamos sesió
 ![Terminal](images/terminal.png)
 
 ```console
-$ su -l  # es una ele minúscula
-$ addgroup <tu-usuario> sudo
+su -c "/sbin/addgroup <usuario> sudo"
 ```
 
 > No incluyas los angulitos `<` `>` en la instrucción, sustituye por el nombre de tu usuario.
