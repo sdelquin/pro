@@ -19,10 +19,19 @@ sudo apt install dkms linux-headers-$(uname -r) build-essential
 
 ## Instalación
 
-Ahora ya podemos montar la unidad de CDROM y lanzar el instalador de las "Guest Additions" de VirtualBox:
+Ahora ya podemos montar la unidad de CDROM y lanzar el instalador de las "Guest Additions" de VirtualBox.
+
+Primero montamos la unidad:
 
 ```console
-sudo mount /dev/cdrom /mnt  # No te preocupes por el mensaje de "Read Only"
+sudo mount /dev/cdrom /mnt  &&
+```
+
+> No te preocupes si sale un mensaje sobre acceso "Read Only"
+
+Y luego lanzamos el instalador:
+
+```console
 sudo sh /mnt/VBoxLinuxAdditions.run
 ```
 

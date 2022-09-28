@@ -61,3 +61,7 @@ code .
 ```
 
 > Es posible que VSCode nos pregunte la primera vez si confiamos en la ubicación que estamos abriendo. Marcar que sí y continuar.
+
+## Por si algo va mal
+
+En el caso de que VSCode funcione de manera incorrecta o se cierre inesperadamente, se puede encontrar información en sus "logs" dentro de la carpeta `~/.config/Code/logs`

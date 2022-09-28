@@ -46,8 +46,9 @@ sudo -- sh -c "ln -s $HOME/.vimrc /root/.vimrc; ln -s $HOME/.vim /root/.vim"
 Configuraciones a nivel de usuario → [.bashrc](files/.bashrc)
 
 ```console
-curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.bashrc
+curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.bashrc &&
 source ~/.bashrc
+
 ```
 
 ## Copiar con selección
@@ -63,10 +64,10 @@ sudo apt install -y autocutsel
 Ahora creamos un servicio para que funcione de manera permanente (y se active en el arranque):
 
 ```console
-mkdir -p ~/.config/systemd/user
-curl -fLo ~/.config/systemd/user/autocutsel.service https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/autocutsel.service
-systemctl --user daemon-reload
-systemctl --user enable autocutsel
+mkdir -p ~/.config/systemd/user &&
+curl -fLo ~/.config/systemd/user/autocutsel.service https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/autocutsel.service &&
+systemctl --user daemon-reload &&
+systemctl --user enable autocutsel &&
 systemctl --user start autocutsel
 ```
 

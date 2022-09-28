@@ -9,7 +9,7 @@ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-
 Descargamos la última versión disponible de Python:
 
 ```console
-curl https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tgz | tar xvz -C /tmp
+curl https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tgz | tar xvz -C /tmp &&
 cd /tmp/Python-3.10.7
 ```
 
@@ -36,7 +36,7 @@ sudo make altinstall
 Comprobamos que hemos instalado correctamente la versión de Python:
 
 ```console
-cd
+cd &&
 python3.10 --version
 ```
 
