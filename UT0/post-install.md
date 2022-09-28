@@ -46,7 +46,6 @@ Configuraciones a nivel de usuario → [.bashrc](files/.bashrc)
 ```console
 curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.bashrc &&
 source ~/.bashrc
-
 ```
 
 ## Copiar con selección
