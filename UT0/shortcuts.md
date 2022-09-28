@@ -14,8 +14,8 @@ Aplicaciones → Configuración → Gestor de ventanas → Teclado
 | <kbd>Alt+F10</kbd>         | Maximiza la ventana                       |
 | <kbd>Alt+F11</kbd>         | Ventana a pantalla completa               |
 | <kbd>Ctrl+Alt+D</kbd>      | Mostrar el escritorio                     |
-| <kbd>Super+TN ↑</kbd>      | Ajustar la ventana arriba                 |
-| <kbd>Super+TN ↓</kbd>      | Ajustar la ventana abajo                  |
+| <kbd>Super+TN ↓</kbd>      | Ajustar la ventana arriba                 |
+| <kbd>Super+TN ↑</kbd>      | Ajustar la ventana abajo                  |
 | <kbd>Super+TN ←</kbd>      | Ajustar la ventana a la izquierda         |
 | <kbd>Super+TN →</kbd>      | Ajustar la ventana a la derecha           |
 | <kbd>Super+TN Inicio</kbd> | Ajustar la ventana arriba a la izquierda  |
@@ -40,18 +40,20 @@ Aplicaciones → Configuración → Gestor de ventanas → Teclado
 | <kbd>Ctrl+0</kbd>       | Restaurar tamaño de fuente |
 | <kbd>Shift+Ctrl+V</kbd> | Pegar                      |
 | <kbd>Ctrl+L</kbd>       | Borrar pantalla            |
-| <kbd>Esc+.</kbd>        | Últimos comandos           |
+| <kbd>Ctrl+C</kbd>       | Abortar ejecución          |
+| <kbd>Esc+.</kbd>        | Últimos argumentos         |
 
 ## Atajos en VSCode
 
-| Combinación         | Acción                          |
-| ------------------- | ------------------------------- |
-| <kbd>Ctrl+C</kbd>   | Copiar                          |
-| <kbd>Ctrl+X</kbd>   | Cortar                          |
-| <kbd>Ctrl+V</kbd>   | Pegar                           |
-| <kbd>Ctrl+Z</kbd>   | Deshacer                        |
-| <kbd>Ctrl+A</kbd>   | Seleccionar todo                |
-| <kbd>Ctrl+N</kbd>   | Crear nuevo fichero             |
-| <kbd>Ctrl+S</kbd>   | Guardar                         |
-| <kbd>Ctrl+Tab</kbd> | Moverse entre ficheros abiertos |
-| <kbd>Ctrl+`</kbd>   | Abrir una terminal              |
+| Combinación             | Acción                          |
+| ----------------------- | ------------------------------- |
+| <kbd>Ctrl+C</kbd>       | Copiar                          |
+| <kbd>Ctrl+X</kbd>       | Cortar                          |
+| <kbd>Ctrl+V</kbd>       | Pegar                           |
+| <kbd>Ctrl+Z</kbd>       | Deshacer                        |
+| <kbd>Ctrl+A</kbd>       | Seleccionar todo                |
+| <kbd>Ctrl+N</kbd>       | Crear nuevo fichero             |
+| <kbd>Ctrl+S</kbd>       | Guardar                         |
+| <kbd>Ctrl+Tab</kbd>     | Moverse entre ficheros abiertos |
+| <kbd>Ctrl+`</kbd>       | Abrir una terminal              |
+| <kbd>Ctrl+Shift+V</kbd> | Renderizar Markdown             |
