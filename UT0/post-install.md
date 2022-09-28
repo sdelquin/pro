@@ -3,7 +3,7 @@
 ## Herramientas varias
 
 ```console
-sudo apt install -y curl git tree xclip fonts-powerline fonts-firacode
+sudo apt install -y curl git tree xclip fonts-powerline fonts-firacode psmisc
 ```
 
 ## Vim

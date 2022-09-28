@@ -65,3 +65,9 @@ code .
 ## Por si algo va mal
 
 En el caso de que VSCode funcione de manera incorrecta o se cierre inesperadamente, se puede encontrar información en sus "logs" dentro de la carpeta `~/.config/Code/logs`
+
+Si por lo que fuera, necesitamos "matar" el proceso, podemos hacerlo de la siguiente manera:
+
+```console
+killall code
+```
