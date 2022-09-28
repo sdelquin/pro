@@ -33,8 +33,6 @@ Instalar los plugins:
 vi +'PlugInstall --sync' +qa
 ```
 
-> vim se abrirá de manera automática, instalará los plugins y se volverá a cerrar. No tocar nada hasta que vuelva a la terminal. Si diera algún error, basta con pulsar <kbd>ENTER</kbd>.
-
 Enlazar la configuración de vim para que funcione igual con `sudo`:
 
 ```console

@@ -8,7 +8,7 @@ call plug#begin()
 call plug#end()
 
 "https://vimcolorschemes.com/
-colorscheme PaperColor
+silent! colorscheme PaperColor
 
 syntax on
 set tabstop=4
