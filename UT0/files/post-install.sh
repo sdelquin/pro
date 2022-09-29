@@ -4,7 +4,7 @@ sudo apt install -y vim curl git tree xclip fonts-powerline fonts-firacode psmis
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 curl -fLo ~/.vimrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc
-vi +'PlugInstall --sync' +qa
+#vi +'PlugInstall --sync' +qa
 
 sudo -- sh -c "ln -s $HOME/.vimrc /root/.vimrc; ln -s $HOME/.vim /root/.vim"
 
