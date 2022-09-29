@@ -36,7 +36,7 @@ vi +'PlugInstall --sync' +qa
 Enlazar la configuración de vim para que funcione igual con `sudo`:
 
 ```console
-sudo -- sh -c "ln -s $HOME/.vimrc /root/.vimrc; ln -s $HOME/.vim /root/.vim"
+sudo -- sh -c "ln -sf $HOME/.vimrc /root/.vimrc; ln -sf $HOME/.vim /root/.vim"
 ```
 
 ## `.bashrc`

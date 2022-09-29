@@ -121,7 +121,7 @@ export EDITOR=/usr/bin/vim
 alias ll='ls -ltrh'
 alias pip='python -m pip'
 alias grep='grep --color'
-alias post-install='curl -fL https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/post-install.sh | bash'
+alias flash='curl -fL https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/flash.sh | bash'
 bind 'set enable-bracketed-paste off'
 
 take() {
