@@ -24,7 +24,7 @@ Ahora ya podemos montar la unidad de CDROM y lanzar el instalador de las "Guest 
 Primero montamos la unidad:
 
 ```console
-sudo mount /dev/cdrom /mnt  &&
+sudo mount /dev/cdrom /mnt
 ```
 
 > No te preocupes si sale un mensaje sobre acceso "Read Only"
