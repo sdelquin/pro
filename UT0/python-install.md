@@ -1,5 +1,11 @@
 # Instalación de Python
 
+Actualizamos los repositorios:
+
+```console
+sudo apt update
+```
+
 Instalamos los prerrequisitos:
 
 ```console
