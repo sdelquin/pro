@@ -15,7 +15,7 @@ pip install powerline-shell
 Añadimos las configuraciones del prompt:
 
 ```console
-curl -fL https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/powerline-bash >> ~/.bashrc
+curl -fL https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/powerline-bash >> ~/.bashrc
 ```
 
 ## Activación

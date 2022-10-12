@@ -24,7 +24,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 Configuraciones básicas de vim → [.vimrc](files/.vimrc)
 
 ```console
-curl -fLo ~/.vimrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.vimrc
+curl -fLo ~/.vimrc https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/.vimrc
 ```
 
 Instalar los plugins:
@@ -44,7 +44,7 @@ sudo -- sh -c "ln -sf $HOME/.vimrc /root/.vimrc; ln -sf $HOME/.vim /root/.vim"
 Configuraciones a nivel de usuario → [.bashrc](files/.bashrc)
 
 ```console
-curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/.bashrc &&
+curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/.bashrc &&
 source ~/.bashrc
 ```
 
@@ -62,7 +62,7 @@ Ahora creamos un servicio para que funcione de manera permanente (y se active en
 
 ```console
 mkdir -p ~/.config/systemd/user &&
-curl -fLo ~/.config/systemd/user/autocutsel.service https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/autocutsel.service &&
+curl -fLo ~/.config/systemd/user/autocutsel.service https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/autocutsel.service &&
 systemctl --user daemon-reload &&
 systemctl --user enable autocutsel &&
 systemctl --user start autocutsel
@@ -86,5 +86,5 @@ Para establecer el paquete de **iconos**:
 ## Ajustes de Terminal
 
 ```console
-curl -fLo ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/terminalrc
+curl -fLo ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/terminalrc
 ```

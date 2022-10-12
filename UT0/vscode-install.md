@@ -47,7 +47,7 @@ code --install-extension ms-python.python
 Descargamos las configuraciones personalizadas para Visual Studio Code:
 
 ```console
-curl -fLo ~/.config/Code/User/settings.json https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/settings.json
+curl -fLo ~/.config/Code/User/settings.json https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/settings.json
 ```
 
 ## Apertura de la aplicación
