@@ -118,10 +118,13 @@ fi
 
 export PATH=~/.local/bin:$PATH
 export EDITOR=/usr/bin/vim
+
 alias ll='ls -ltrh'
 alias pip='python -m pip'
 alias grep='grep --color'
 alias flash='curl -fL https://raw.githubusercontent.com/sdelquin/pro/main/UT0/files/flash.sh | bash'
+alias xo='xdg-open .'
+
 bind 'set enable-bracketed-paste off'
 
 take() {

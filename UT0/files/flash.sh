@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install -y vim curl git tree xclip fonts-powerline fonts-firacode psmisc autocutsel materia-gtk-theme papirus-icon-theme
+sudo apt install -y vim curl git tree xclip fonts-powerline fonts-firacode psmisc autocutsel materia-gtk-theme papirus-icon-theme zip
 
 if [ -e ~/.vim/autoload/plug.vim ]
  then cp ~/.vim/autoload/plug.vim ~/.vim/autoload/plug.vim.bk
