@@ -55,6 +55,7 @@ assert cytosines_rate == 18.0
 
 ## Instrucciones de entrega
 
+- Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
 - Trabaja en una carpeta `~/pro/ut1/pop0/`
 - Recuerda llamar a cada fichero con el nombre indicado: `ejercicio1.py`, `ejercicio2.py`, etc. **Todo en minúsculas, sin espacios y con la extensión .py**
 - Estando en la carpeta de trabajo, comprime los archivos con: `zip ut1-pop0.zip *.py`
