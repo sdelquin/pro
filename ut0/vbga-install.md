@@ -1,6 +1,6 @@
 # VirtualBox Guest Additions
 
-Para habilitar funciones como el ajuste del tamaño de la ventana o la función de copiar y pegar, debemos instalar las [Guest Additions](https://www.virtualbox.org/manual/ch04.html) de VirtualBox.
+Para habilitar funciones como el **ajuste del tamaño de la ventana** o la función de **copiar y pegar**, debemos instalar las [Guest Additions](https://www.virtualbox.org/manual/ch04.html) de VirtualBox.
 
 ## Carga de la imagen
 
@@ -9,12 +9,12 @@ Para habilitar funciones como el ajuste del tamaño de la ventana o la función 
 3. Ahora, desde el menú superior de la máquina virtual, vete a: _Dispositivos → Insertar imagen de CD de las "Guest Additions"..._
 4. Esto hará que aparezca un icono de un CD en el escritorio con un nombre parecido a `VBox_GAs_X.Y.Z`
 
-## Preparación previa
+## Requisitos previos
 
 Necesitamos instalar una serie de paquetes previos:
 
 ```console
-sudo apt install dkms linux-headers-$(uname -r) build-essential
+sudo apt install -y dkms linux-headers-$(uname -r) build-essential
 ```
 
 ## Instalación
@@ -45,7 +45,7 @@ sudo poweroff
 
 Con la máquina apagada, vamos a **desmontar la imagen** de las "Guest Additions". Para ello:
 
-1. _Configuración → Almacenamiento → Controlador IDE → Unidad óptica_
+1. _Configuración → Almacenamiento → Controlador IDE → VBoxGuestAdditions_X.X.XXX → Unidad óptica_
 2. _Hacer clic sobre el símbolo del CD junto a "Unidad Óptica"_:
 
 ![Disco IDE](images/disc-ide.jpg) → _Eliminar disco de la unidad virtual_

@@ -12,25 +12,27 @@ Comprobamos que el paquete se haya descargado correctamente:
 
 ```console
 file /tmp/vscode.deb
-# vscode.deb: Debian binary package (format 2.0), with control.tar.xz, data compression xz
 ```
+
+→ `vscode.deb: Debian binary package (format 2.0), with control.tar.xz, data compression xz`
 
 Instalamos el paquete:
 
 ```console
-sudo apt install /tmp/vscode.deb
+sudo apt install -y /tmp/vscode.deb
 ```
 
 Comprobamos que la instalación ha sido satisfactoria:
 
 ```console
 code --version
-# 1.71.1
-# e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb
-# amd64
 ```
 
-> Es posible que tengas pequeñas diferencias en la versión. ¡No te preocupes!
+→ `1.71.1`  
+→ `e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb`  
+→ `amd64`
+
+> 💡 &nbsp;Es posible que tengas pequeñas diferencias en la versión. ¡No te preocupes!
 
 ## Preparación para desarrollo Python
 
@@ -52,12 +54,10 @@ curl -fLo ~/.config/Code/User/settings.json https://raw.githubusercontent.com/sd
 
 ## Apertura de la aplicación
 
-Creamos una carpeta `dev` para desarrollo y abrimos Visual Studio Code en esa ubicación:
+Para probar que todo ha ido bien y que podemos editar ficheros sin dificultad, podemos lanzar la aplicación VSCode:
 
 ```console
-cd
-take dev
-code .
+cd ~/pro && code .
 ```
 
 > Es posible que VSCode nos pregunte la primera vez si confiamos en la ubicación que estamos abriendo. Marcar que sí y continuar.

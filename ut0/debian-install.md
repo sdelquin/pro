@@ -22,7 +22,7 @@ En la búsqueda de un sistema operativo que consuma pocos recursos y que nos pro
 5. Almacenamiento en unidad de disco duro → Tamaño fijo
 6. Tamaño del disco duro → 30GB
 7. Disco duro → Crear un disco duro virtual ahora
-8. Una vez creada la máquina, botón derecho: Configuración → Red → Adaptador 1 → Conectado a: Adaptador puente
+8. Una vez creada la máquina, botón derecho sobre la máquina: Configuración → Red → Adaptador 1 → Conectado a: Adaptador puente
 
 **Arrancar la máquina virtual**. En este momento nos pedirá que elijamos un disco de inicio. En el botón de selección hay que localizar la imagen que hemos descargado `.iso` (probablemente estará en la carpeta Descargas).
 
@@ -30,41 +30,41 @@ En la búsqueda de un sistema operativo que consuma pocos recursos y que nos pro
 
 _(utilizar las teclas de cursor, ya que el ratón no funciona durante la instalación)_
 
-1. Seleccionar _Install_ desde el menú principal.
-2. Seleccionar idioma _Spanish_.
-3. Seleccionar país _España_.
-4. Seleccionar teclado _Español_.
+1. Seleccionar **Install** desde el menú principal.
+2. Seleccionar idioma **Spanish**.
+3. Seleccionar país **España**.
+4. Seleccionar teclado **Español**.
 5. Introducir el nombre de la máquina.
 6. Introducir el nombre del dominio: dejar el que viene por defecto (pulsar ENTER).
 7. Introducir **la clave de superusuario** (`root`). **🚨 ¡No la olvides! 🚨**
 8. Volver a confirmar la clave de superusuario.
 9. Crear cuenta de usuario "ordinario":
-   - Nombre completo indicando _nombre y apellidos_.
+   - Nombre completo indicando **nombre y apellidos**.
    - Nombre de usuario: todo en minúsculas y sin espacios (No más de 8-10 caracteres).
    - Contraseña. ¡No la olvides!
    - Verificar la contraseña introducida.
-10. Introducir la zona horaria _Islas Canarias_.
+10. Introducir la zona horaria **Islas Canarias**.
 11. Particionado del disco:
-    - Indicar particionado _Guiado (utilizar todo el disco)_
+    - Indicar particionado **Guiado (utilizar todo el disco)**
     - Elegir el disco a particionar: Sólo debería haber uno.
-    - Esquema de particionado: _Todos los ficheros en una partición_.
-    - Particionado de discos: _Finalizar el particionado y escribir los cambios en el disco_.
-    - ¿Desea escribir los cambios en los discos? _Sí_ (utilizar tabulador para cambiar de opción)
+    - Esquema de particionado: **Todos los ficheros en una partición**.
+    - Particionado de discos: **Finalizar el particionado y escribir los cambios en el disco**.
+    - ¿Desea escribir los cambios en los discos? **Sí** (utilizar tabulador para cambiar de opción)
 12. Gestor de paquetes:
-    - ¿Desea analizar otros medios de instalación adicionales? _No_.
-    - País de la réplica de Debian: _España_.
-    - Réplica de Debian: _deb.debian.org_
-    - Proxy HTTP: _Dejar en blanco_ (pulsar ENTER)
-    - ¿Desea participar en la encuesta sobre el uso de paquetes? _No_.
-13. Elegir los programas a instalar. **Marcar ÚNICAMENTE lo siguiente** (utilizando los cursores y la barra espaciadora) _Desmarcar lo que no corresponda_:
-    - Xfce.
-    - SSH Server.
-    - Utilidades estándar del sistema.  
-      _(utilizar el tabulador y luego ENTER para continuar)_
+    - ¿Desea analizar otros medios de instalación adicionales? **No**.
+    - País de la réplica de Debian: **España**.
+    - Réplica de Debian: **deb.debian.org**
+    - Proxy HTTP: **Dejar en blanco** (pulsar ENTER)
+    - ¿Desea participar en la encuesta sobre el uso de paquetes? **No**.
+13. Elegir los programas a instalar. **🚨 Marcar ÚNICAMENTE lo siguiente** (utilizando los cursores y la barra espaciadora) **Desmarcar lo que no corresponda 🚨**:
+    - [x] Xfce.
+    - [x] SSH Server.
+    - [x] Utilidades estándar del sistema.  
+           _(utilizar el tabulador y luego ENTER para continuar)_
 14. GRUB:
-    - ¿Desea instalar el cargador de arranque GRUB en su unidad principal? → _Sí_
-    - Dispositivo donde instalar el cargador de arranque: _/dev/sda_
-15. Instalación completada: _Continuar_
+    - ¿Desea instalar el cargador de arranque GRUB en su unidad principal? → **Sí**
+    - Dispositivo donde instalar el cargador de arranque: **/dev/sda**
+15. Instalación completada: **Continuar**
 
 ## Sudoers
 
@@ -78,7 +78,7 @@ Después de arrancar la máquina virtual que acabamos de crear, iniciamos sesió
 su -c "/sbin/addgroup <usuario> sudo"
 ```
 
-> No incluyas los angulitos `<` `>` en la instrucción, sustituye por el nombre de tu usuario.
+> 💡 &nbsp;No incluyas los angulitos `<` `>` en la instrucción, sustituye por el nombre de tu usuario.
 
 A continuación debes **salir de la sesión y volver a entrar** para que los cambios surtan efecto.
 

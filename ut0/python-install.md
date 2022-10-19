@@ -9,7 +9,9 @@ sudo apt update
 Instalamos los prerrequisitos:
 
 ```console
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+sudo apt install -y build-essential zlib1g-dev libncurses5-dev \
+libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev \
+libsqlite3-dev wget libbz2-dev
 ```
 
 Descargamos la última versión disponible de Python:
@@ -39,24 +41,19 @@ Ejecutamos la instalación, respetando la versión por defecto de Python que hay
 sudo make altinstall
 ```
 
-Comprobamos que hemos instalado correctamente la versión de Python:
-
-```console
-cd &&
-python3.10 --version
-```
-
 Hacemos que esta nueva versión de Python sea la versión por defecto en el sistema:
 
 ```console
 sudo update-alternatives --install /usr/bin/python python /usr/local/bin/python3.10 1
 ```
 
-Podemos ahora comprobar que la nueva versión quedó correctamente configurada:
+Ahora podemos comprobar que la nueva versión quedó correctamente configurada:
 
 ```console
-python --version
+cd; python --version
 ```
+
+→ `Python 3.10.7`
 
 ## Instalación de paquetes
 
@@ -72,5 +69,13 @@ A continuación instalamos los paquetes que necesitamos para desarrollo:
 - [IPython](https://ipython.org/): consola interactiva "vitaminada" para Python.
 
 ```console
-pip install black ipython
+pip install black ipython cowsay
+```
+
+## La vaca feliz
+
+Si todo ha ido bien, podrás ver a la vaca feliz 🐮:
+
+```console
+python -c 'import cowsay; cowsay.cow("Genial")'
 ```
