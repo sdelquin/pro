@@ -1,5 +1,6 @@
 .DS_Store
 ut*/pop*/*
+!ut*/**/howto.md
 !ut1/pop0/README.md
 !ut1/pop1/README.md
 !ut2/pop0/README.md

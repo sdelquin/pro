@@ -6,7 +6,7 @@
 
 ## ⚡ Instrucciones
 
-**Lee detenidamente** [las instrucciones para el desarrollo de la prueba](../../pop-notes.md).
+**Lee detenidamente** [las instrucciones para el desarrollo de la prueba](./howto.md).
 
 ## `ejercicio1.py`
 
