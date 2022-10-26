@@ -62,6 +62,24 @@ cd ~/pro && code .
 
 > Es posible que VSCode nos pregunte la primera vez si confiamos en la ubicación que estamos abriendo. Marcar que sí y continuar.
 
+## Lanzando nuestro primer programa
+
+Creamos un fichero en VSCode pulsando el botón correspondiente y lo llamamos `hello.py`:
+
+![VSCode nuevo fichero](./images/vscode-newfile.png)
+
+Escribimos este código:
+
+![VSCode primer código](./images/vscode-hello.png)
+
+Pulsamos botón derecho sobre el nombre del fichero en el explorador y abrimos una **terminal**:
+
+![VSCode terminal](./images/vscode-terminal.png)
+
+Desde la terminal lanzamos nuestro programa escribiendo: `python hello.py`:
+
+![VSCode lanzar programa](./images/vscode-launch.png)
+
 ## Por si algo va mal
 
 En el caso de que VSCode funcione de manera incorrecta o se cierre inesperadamente, se puede encontrar información en sus "logs" dentro de la carpeta `~/.config/Code/logs`
