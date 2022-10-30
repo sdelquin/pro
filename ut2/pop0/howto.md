@@ -1,7 +1,5 @@
 # Instrucciones para el desarrollo de las POPs
 
-hola hola
-
 ## Antes de empezar
 
 - Actualiza el paquete de comprobación de ejercicios:
