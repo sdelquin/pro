@@ -17,6 +17,12 @@ import sys
 
 import pycheck
 
+CHECK_CASES = [
+    [['sergio delgado quintero'], 'srg dlgd qntr'],
+    [['PEPE BENAVENTE'], 'PP BNVNT'],
+    [['volando VOY, volando VENGO'], 'vlnd VY, vlnd VNG'],
+]
+
 
 def run(text: str) -> str:
     # TU CÓDIGO AQUÍ
@@ -24,7 +30,7 @@ def run(text: str) -> str:
 
 
 if __name__ == '__main__':
-    pycheck.check('pro.ut2.pop0.ej1', sys.argv, run)
+    pycheck.check(run, CHECK_CASES, sys.argv)
 ```
 
 ## `ejercicio2.py`
@@ -36,6 +42,12 @@ import sys
 
 import pycheck
 
+CHECK_CASES = [
+    [['probando'], 106.625],
+    [['Buena Suerte'], 96.25],
+    [['Yo escribo Python'], 97.0],
+]
+
 
 def run(word: str) -> float:
     # TU CÓDIGO AQUÍ
@@ -43,5 +55,5 @@ def run(word: str) -> float:
 
 
 if __name__ == '__main__':
-    pycheck.check('pro.ut2.pop0.ej2', sys.argv, run)
+    pycheck.check(run, CHECK_CASES, sys.argv)
 ```

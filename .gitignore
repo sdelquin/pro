@@ -1,4 +1,5 @@
 .DS_Store
+*.pyc
 ut*/pop*/*
 !ut*/**/howto.md
 !ut1/pop0/README.md

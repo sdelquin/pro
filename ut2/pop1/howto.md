@@ -1,5 +1,7 @@
 # Instrucciones para el desarrollo de las POPs
 
+hola hola
+
 ## Antes de empezar
 
 - Actualiza el paquete de comprobación de ejercicios:
@@ -18,6 +20,7 @@ mkdir -p ~/pro/ut2/pop1 && cd ~/pro/ut2/pop1 && code .
 
 - Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
 - Recuerda llamar a cada fichero con el nombre indicado: `ejercicio1.py`, `ejercicio2.py`, etc. **Todo en minúsculas, sin espacios y con la extensión .py**
+- Copia la plantilla, borra la línea `# TU CÓDIGO AQUÍ` y escribe a partir de ahí tu solución (bien indentada). No se puede tocar nada más de la plantilla.
 - Tienes 3 modos de probar tus ejercicios (desde una terminal):
   - Contra los casos establecidos por el profe: `python <ejercicioX.py> -k`
   - Listar los casos establecidos por el profe: `python <ejercicioX.py> -l`

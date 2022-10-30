@@ -4,6 +4,10 @@
 
 ![Python sticker](../../python-sticker.png)
 
+## ⚡ Instrucciones
+
+**Lee detenidamente** [las instrucciones para el desarrollo de la prueba](./howto.md).
+
 ## `ejercicio1.py`
 
 Escribe un programa en Python que partiendo de dos valores enteros $a$ y $b$ calcule el resultado de la siguiente expresión:
@@ -13,22 +17,24 @@ F = a^2 + b^2 - \sqrt{(a \cdot b)}
 $$
 
 ```python
-# ut1-pop1-ej1
-a = 5
-b = 7
-# No tocar nada de aquí hacia arriba ↑
-# ********************************************************
+import sys
 
-# ========================================================
-# @@ Escribe tu código debajo de esta línea ↓
+import pycheck
+
+CHECK_CASES = [
+    [[5, 7], 68.08392021690038],
+    [[6, 2], 36.53589838486224],
+    [[21, 4], 447.83484861008833],
+]
 
 
-# $$ Escribe tu código encima de esta línea ↑
-# ========================================================
+def run(a: int, b: int) -> float:
+    # TU CÓDIGO AQUÍ
+    return F
 
-# ********************************************************
-# No tocar nada de aquí hacia abajo ↓
-assert F == 68.08392021690038
+
+if __name__ == '__main__':
+    pycheck.check(run, CHECK_CASES, sys.argv)
 ```
 
 ## `ejercicio2.py`
@@ -36,21 +42,24 @@ assert F == 68.08392021690038
 Escribe un programa en Python que dado un número entero calcule el número de 1s que contiene su representación binaria.
 
 ```python
-# ut1-pop1-ej2
-number = 99
-# No tocar nada de aquí hacia arriba ↑
-# ********************************************************
+import sys
 
-# ========================================================
-# @@ Escribe tu código debajo de esta línea ↓
+import pycheck
+
+CHECK_CASES = [
+    [[99], 4],
+    [[201], 4],
+    [[3219], 6],
+]
 
 
-# $$ Escribe tu código encima de esta línea ↑
-# ========================================================
+def run(number: int) -> int:
+    # TU CÓDIGO AQUÍ
+    return count_ones
 
-# ********************************************************
-# No tocar nada de aquí hacia abajo ↓
-assert count_ones == 4
+
+if __name__ == '__main__':
+    pycheck.check(run, CHECK_CASES, sys.argv)
 ```
 
 ## `ejercicio3.py`
@@ -64,24 +73,24 @@ Notas:
 - Reemplazar la vocal indicada por la correspondiente calculada según el _offset_.
 
 ```python
-# ut1-pop1-ej3
-VOWELS = 'aeiou'
-target_vowel = 'e'
-target_offset = 2
-input_text = 'Hay una gran diferencia entre conocer el camino y andar el camino'
-# No tocar nada de aquí hacia arriba ↑
-# ********************************************************
+import sys
 
-# ========================================================
-# @@ Escribe tu código debajo de esta línea ↓
+import pycheck
+
+CHECK_CASES = [
+    [['e', 2, 'diferencia'], 'diforoncia'],
+    [['u', -2, 'uruguay'], 'irigiay'],
+    [['a', 4, 'anatolia'], 'unutoliu'],
+]
 
 
-# $$ Escribe tu código encima de esta línea ↑
-# ========================================================
+def run(target_vowel: str, target_offset: int, input_text: str) -> str:
+    # TU CÓDIGO AQUÍ
+    return output_text
 
-# ********************************************************
-# No tocar nada de aquí hacia abajo ↓
-assert output_text == 'Hay una gran diforoncia ontro conocor ol camino y andar ol camino'
+
+if __name__ == '__main__':
+    pycheck.check(run, CHECK_CASES, sys.argv)
 ```
 
 ## `ejercicio4.py`
@@ -89,21 +98,24 @@ assert output_text == 'Hay una gran diforoncia ontro conocor ol camino y andar o
 Escribe un programa en Python que convierta la representación hexadecimal de un color en su versión decimal RGB.
 
 ```python
-# ut1-pop1-ej4
-hexcolor = 'A131F7'
-# No tocar nada de aquí hacia arriba ↑
-# ********************************************************
+import sys
 
-# ========================================================
-# @@ Escribe tu código debajo de esta línea ↓
+import pycheck
+
+CHECK_CASES = [
+    [['A131F7'], '(161,49,247)'],
+    [['FF11FF'], '(255,17,255)'],
+    [['123456'], '(18,52,86)'],
+]
 
 
-# $$ Escribe tu código encima de esta línea ↑
-# ========================================================
+def run(hex_color: str) -> str:
+    # TU CÓDIGO AQUÍ
+    return rgb_color
 
-# ********************************************************
-# No tocar nada de aquí hacia abajo ↓
-assert rgb_color == '(161,49,247)'
+
+if __name__ == '__main__':
+    pycheck.check(run, CHECK_CASES, sys.argv)
 ```
 
 ## `ejercicio5.py`
@@ -115,27 +127,22 @@ Escribe un programa en Python que permita crear un "slug" a partir de una cadena
 - Las vocales con tilde se sutituyen por vocales sin tilde.
 
 ```python
-# ut1-pop1-ej5
-text = 'El Sistema Operativo que funcionará Libre y Gratuito'
-# No tocar nada de aquí hacia arriba ↑
-# ********************************************************
+import sys
 
-# ========================================================
-# @@ Escribe tu código debajo de esta línea ↓
+import pycheck
+
+CHECK_CASES = [
+    [['hola probando'], 'hola-probando'],
+    [['áéíóú'], 'aeiou'],
+    [['TWIST & SHOUT'], 'twist-&-shout'],
+]
 
 
-# $$ Escribe tu código encima de esta línea ↑
-# ========================================================
+def run(text: str) -> str:
+    # TU CÓDIGO AQUÍ
+    return slug
 
-# ********************************************************
-# No tocar nada de aquí hacia abajo ↓
-assert slug == 'el-sistema-operativo-que-funcionara-libre-y-gratuito'
+
+if __name__ == '__main__':
+    pycheck.check(run, CHECK_CASES, sys.argv)
 ```
-
-## Instrucciones de entrega
-
-- Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
-- Trabaja en una carpeta `~/pro/ut1/pop1/`
-- Recuerda llamar a cada fichero con el nombre indicado: `ejercicio1.py`, `ejercicio2.py`, etc. **Todo en minúsculas, sin espacios y con la extensión .py**
-- Estando en la carpeta de trabajo, comprime los archivos con: `zip ut1-pop1.zip *.py`
-- Sube únicamente el fichero comprimido `ut1-pop1.zip`

@@ -13,7 +13,7 @@ pip install -U git+https://github.com/sdelquin/pycheck.git
 - Trabaja en la carpeta adecuada:
 
 ```console
-mkdir -p ~/pro/ut2/pop0 && cd ~/pro/ut2/pop0 && code .
+mkdir -p ~/pro/ut1/pop1 && cd ~/pro/ut1/pop1 && code .
 ```
 
 ## Durante la prueba
@@ -33,9 +33,9 @@ mkdir -p ~/pro/ut2/pop0 && cd ~/pro/ut2/pop0 && code .
 - Estando en la carpeta de trabajo, comprime los archivos con:
 
 ```console
-cd ~/pro/ut2/pop0 && zip ut2-pop0.zip *.py
+cd ~/pro/ut1/pop1 && zip ut1-pop1.zip *.py
 ```
 
-- Sube únicamente el fichero comprimido `ut2-pop0.zip`
+- Sube únicamente el fichero comprimido `ut1-pop1.zip`
 
 🚨 Para que el ejercicio **funcione correctamente** tiene que **funcionar para todos los tests establecidos por el profe**.
