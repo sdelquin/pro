@@ -49,20 +49,6 @@ curl -fLo ~/.bashrc https://raw.githubusercontent.com/sdelquin/pro/main/ut0/file
 source ~/.bashrc
 ```
 
-## Carpetas de trabajo
-
-Vamos a crear una serie de carpetas para trabajar durante la asignatura. Podemos generar toda esta estructura automáticamente lanzando el siguiente comando:
-
-```console
-curl -fL https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/pro-folders.sh | bash
-```
-
-Puedes comprobar el árbol de directorios creado como se indica a continuación:
-
-```console
-tree pro
-```
-
 ## Copiar con selección
 
 Ahora vamos a habilitar la opción de copiar al portapapeles únicamente con seleccionar el texto.
