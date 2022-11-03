@@ -10,3 +10,4 @@ Materiales para la docencia del módulo **Programación** de primer curso del ci
 | ------------ | ---------------------------------------------------------- |
 | [UT0](./ut0) | Primeros pasos                                             |
 | [UT1](./ut1) | Identificación de los elementos de un programa informático |
+| [UT2](./ut2) | Uso de estructuras de control                              |
