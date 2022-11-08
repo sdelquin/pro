@@ -62,6 +62,8 @@ if __name__ == '__main__':
 
 Escribe un programa en Python que realice la conversión de una secuencia de ADN en su correspondiente ARN. El ARN es igual que el ADN salvo que la Timina se sustituye por Uracilo (`U`).
 
+🚨 **No se puede usar la función `replace()`** 🚨
+
 ```python
 import sys
 
