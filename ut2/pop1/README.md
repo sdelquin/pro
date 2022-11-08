@@ -87,7 +87,7 @@ if __name__ == '__main__':
 
 ## `ejercicio4.py`
 
-Escribe un programa en Python que, dada la edad de una madre y su hija, calcule en qué momento de sus vidas la edad de la madre será el doble que la edad de su hija. Lo que habrá que devolver es la edad de la madre y la edad de su hija en el momento en el que la madre doble en edad a su hija.
+Escribe un programa en Python que, dada la edad de una madre y su hija, calcule en qué momento de sus vidas (desde el comienzo) la edad de la madre fue o será el doble que la edad de su hija. Lo que habrá que devolver es la edad de la madre y la edad de su hija en el momento en el que la madre doble en edad a su hija.
 
 ```python
 import sys
@@ -97,7 +97,7 @@ import pycheck
 CHECK_CASES = [
     [[67, 23], (88, 44)],
     [[50, 20], (60, 30)],
-    [[28, 4], (48, 24)],
+    [[24, 14], (20, 10)]
 ]
 
 
