@@ -20,9 +20,10 @@ mkdir -p ~/pro/{{ ut }}/{{ pop }} && cd ~/pro/{{ ut }}/{{ pop }} && code .
 - Recuerda llamar a cada fichero con el nombre indicado: `ejercicio1.py`, `ejercicio2.py`, etc. **Todo en minúsculas, sin espacios y con la extensión .py**
 - Copia la plantilla, borra la línea `# TU CÓDIGO AQUÍ` y escribe a partir de ahí tu solución (bien indentada). No se puede tocar nada más de la plantilla.
 - Tienes 3 modos de probar tus ejercicios (desde una terminal):
-  - Contra los casos establecidos por el profe: `python <ejercicioX.py> -k`
+  - Contra los casos establecidos por el profe: `python <ejercicioX.py>`
   - Listar los casos establecidos por el profe: `python <ejercicioX.py> -l`
   - Usando tus propios valores de entrada: `python <ejercicioX.py> [ARG1] [ARG2] ...`
+- Puedes ver la ayuda ejecutando: `python <ejercicioX.py> -h`
 
 📣 Todos los valores de entrada que especifiques en línea de comandos tienen que ir **entre comillas**, salvo los valores numéricos (y los booleanos).
 
