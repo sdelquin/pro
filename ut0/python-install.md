@@ -65,11 +65,13 @@ pip install -U pip
 
 A continuación instalamos los paquetes que necesitamos para desarrollo:
 
-- [Black](https://black.readthedocs.io/en/stable/): formateador de código en Python.
-- [IPython](https://ipython.org/): consola interactiva "vitaminada" para Python.
+- [black](https://black.readthedocs.io/en/stable/): formateador de código en Python.
+- [iPython](https://ipython.org/): consola interactiva "vitaminada" para Python.
+- [wheel](https://github.com/pypa/wheel): paquete soporte para instalar otros paquetes.
+- [cowsay](https://github.com/VaasuDevanS/cowsay-python): la vaca feliz.
 
 ```console
-pip install black ipython cowsay
+pip install black ipython wheel cowsay
 ```
 
 ## La vaca feliz
