@@ -17,8 +17,8 @@ libsqlite3-dev wget libbz2-dev
 Descargamos la última versión disponible de Python:
 
 ```console
-curl https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tgz | tar xvz -C /tmp &&
-cd /tmp/Python-3.10.7
+curl https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz | tar xvz -C /tmp &&
+cd /tmp/Python-3.11.0
 ```
 
 Configuramos la instalación:
@@ -44,7 +44,7 @@ sudo make altinstall
 Hacemos que esta nueva versión de Python sea la versión por defecto en el sistema:
 
 ```console
-sudo update-alternatives --install /usr/bin/python python /usr/local/bin/python3.10 1
+sudo update-alternatives --install /usr/bin/python python /usr/local/bin/python3.11 10
 ```
 
 Ahora podemos comprobar que la nueva versión quedó correctamente configurada:
@@ -53,7 +53,7 @@ Ahora podemos comprobar que la nueva versión quedó correctamente configurada:
 cd; python --version
 ```
 
-→ `Python 3.10.7`
+→ `Python 3.11.0`
 
 ## Instalación de paquetes
 
