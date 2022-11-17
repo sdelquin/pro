@@ -10,7 +10,7 @@ Situados encima de la opción \*Debian GNU/Linux **pulsamos la tecla <kbd>e</kbd
 
 ![Edit Grub](./images/edit-grub.png)
 
-Ten en cuenta que la disposición del teclado está en UK así que debes fijarte en la siguiente distribución:
+Ten en cuenta que **la disposición del teclado está en UK** así que debes fijarte en la siguiente distribución:
 
 ![Teclado UK](./images/keyboard-uk.png)
 
@@ -30,10 +30,29 @@ A continuación lanzamos el comando para cambiar la contraseña de `root`:
 passwd
 ```
 
-🚨 **Aparecerá un mensaje para escribir la nueva contraseña. Y luego otro mensaje para confirmarla. ¡No olvides esta contraseña!** 🚨
+Y escribimos lo siguiente:
 
-A continuación ya podemos reiniciar la máquina:
+![Root passwd](./images/root-passwd.svg)
+
+> 💡 Aunque no lo veas, sí estás escribiendo la contraseña. Tienes que repetirla.
+
+Ahora reiniciamos la máquina:
 
 ```console
 reboot -f
 ```
+
+Esperamos a la ventana de inicio de sesión habitual, y entramos con las credenciales:
+
+- **USUARIO**: `root`
+- **CONTRASEÑA**: `root`
+
+![Login root](./images/login-root.png)
+
+Una vez dentro, **abrimos una terminal** y **modificamos la contraseña** de `root`:
+
+```console
+passwd
+```
+
+🚨 Aparecerá un mensaje para escribir la nueva contraseña. Y luego otro mensaje para confirmarla. ¡No olvides esta contraseña! 🚨
