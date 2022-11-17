@@ -55,4 +55,4 @@ Una vez dentro, **abrimos una terminal** y **modificamos la contraseña** de `ro
 passwd
 ```
 
-🚨 Aparecerá un mensaje para escribir la nueva contraseña. Y luego otro mensaje para confirmarla. ¡No olvides esta contraseña! 🚨
+🚨 **Aparecerá un mensaje para escribir la nueva contraseña. Y luego otro mensaje para confirmarla. ¡No olvides esta contraseña!** 🚨
