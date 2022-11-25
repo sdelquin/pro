@@ -5,8 +5,10 @@
 - Actualiza el paquete de comprobación de ejercicios:
 
 ```console
-pip install -U git+https://github.com/sdelquin/pycheck.git
+pycheck update
 ```
+
+> ⚠️ Si este comando da error, puedes actualizar con `pip install -U git+http://g.pycheck.es`
 
 - Trabaja en la carpeta adecuada:
 
@@ -17,15 +19,9 @@ mkdir -p ~/pro/ut2/pop1 && cd ~/pro/ut2/pop1 && code .
 ## Durante la prueba
 
 - Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
-- Recuerda llamar a cada fichero con el nombre indicado: `ejercicio1.py`, `ejercicio2.py`, etc. **Todo en minúsculas, sin espacios y con la extensión .py**
-- Copia la plantilla, borra la línea `# TU CÓDIGO AQUÍ` y escribe a partir de ahí tu solución (bien indentada). No se puede tocar nada más de la plantilla.
-- Tienes 3 modos de probar tus ejercicios (desde una terminal):
-  - Contra los casos establecidos por el profe: `python <ejercicioX.py>`
-  - Listar los casos establecidos por el profe: `python <ejercicioX.py> -l`
-  - Usando tus propios valores de entrada: `python <ejercicioX.py> [ARG1] [ARG2] ...`
-- Puedes ver la ayuda ejecutando: `python <ejercicioX.py> -h`
-
-📣 Todos los valores de entrada que especifiques en línea de comandos tienen que ir **entre comillas**, salvo los valores numéricos (y los booleanos).
+- Crea la plantilla del ejercicio con `pycheck template <ejercicio.py>`
+- Muestra la descripción del ejercicio con `pycheck show <ejercicio.py>`
+- Comprueba tu ejercicio contra los casos de prueba con `pycheck check <ejercicio.py>`
 
 ## Al finalizar
 

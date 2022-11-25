@@ -13,7 +13,7 @@ pycheck update
 - Trabaja en la carpeta adecuada:
 
 ```console
-mkdir -p ~/pro/ut1/pop1 && cd ~/pro/ut1/pop1 && code .
+mkdir -p ~/pro/ut3/pop1 && cd ~/pro/ut3/pop1 && code .
 ```
 
 ## Durante la prueba
@@ -28,9 +28,9 @@ mkdir -p ~/pro/ut1/pop1 && cd ~/pro/ut1/pop1 && code .
 - Estando en la carpeta de trabajo, comprime los archivos con:
 
 ```console
-cd ~/pro/ut1/pop1 && zip ut1-pop1.zip *.py
+cd ~/pro/ut3/pop1 && zip ut3-pop1.zip *.py
 ```
 
-- Sube únicamente el fichero comprimido `ut1-pop1.zip`
+- Sube únicamente el fichero comprimido `ut3-pop1.zip`
 
 🚨 Para que el ejercicio **funcione correctamente** tiene que **funcionar para todos los tests establecidos por el profe**.
