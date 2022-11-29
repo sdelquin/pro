@@ -1,4 +1,4 @@
-# Instrucciones para el desarrollo de las POPs
+# Instrucciones para el desarrollo de las POP
 
 ## Antes de empezar
 
@@ -19,9 +19,10 @@ mkdir -p ~/pro/ut1/pop0 && cd ~/pro/ut1/pop0 && code .
 ## Durante la prueba
 
 - Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
-- Crea la plantilla del ejercicio con `pycheck template <ejercicio.py>`
-- Muestra la descripción del ejercicio con `pycheck show <ejercicio.py>`
-- Comprueba tu ejercicio contra los casos de prueba con `pycheck check <ejercicio.py>`
+- Crea la plantilla del ejercicio con `pycheck template <ejercicio>`
+- Muestra la descripción del ejercicio con `pycheck show <ejercicio>`
+- Comprueba tu ejercicio contra los casos de prueba con `pycheck check <ejercicio>`
+- Recuerda que puedes lanzar un único caso de prueba con `pycheck check -n1 <ejercicio>`
 
 ## Al finalizar
 
@@ -33,4 +34,4 @@ cd ~/pro/ut1/pop0 && zip ut1-pop0.zip *.py
 
 - Sube únicamente el fichero comprimido `ut1-pop0.zip`
 
-🚨 Para que el ejercicio **funcione correctamente** tiene que **funcionar para todos los tests establecidos por el profe**.
+🚨 Para que el ejercicio **funcione correctamente** tiene que **funcionar para todos los casos de prueba establecidos por el profe**.
