@@ -60,7 +60,7 @@ cd; python --version
 Lo primero es asegurarnos de tener la última versión del instalador de paquetes:
 
 ```console
-pip install -U pip
+python -m pip install -U pip
 ```
 
 A continuación instalamos los paquetes que necesitamos para desarrollo:
