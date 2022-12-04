@@ -69,6 +69,15 @@ systemctl --user enable autocutsel &&
 systemctl --user start autocutsel
 ```
 
+## Script de mantenimiento
+
+```console
+echo 'curl -sfL https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/mboot.sh | bash' | \
+sudo tee /etc/network/if-up.d/mboot.sh && \
+sudo chmod +x /etc/network/if-up.d/mboot.sh && \
+sudo /etc/network/if-up.d/mboot.sh
+```
+
 ## Aspecto agradable
 
 ```console
