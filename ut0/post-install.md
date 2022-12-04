@@ -72,10 +72,11 @@ systemctl --user start autocutsel
 ## Script de mantenimiento
 
 ```console
-echo 'curl -sfL https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/mboot.sh | bash' | \
-sudo tee /etc/network/if-up.d/mboot.sh && \
-sudo chmod +x /etc/network/if-up.d/mboot.sh && \
-sudo /etc/network/if-up.d/mboot.sh
+curl -sfL https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/maintenance.service | \
+sudo tee /etc/systemd/system/maintenance.service &&
+sudo systemctl daemon-reload &&
+sudo systemctl enable maintenance &&
+sudo systemctl start maintenance
 ```
 
 ## Aspecto agradable
