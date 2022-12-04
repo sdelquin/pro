@@ -73,7 +73,7 @@ systemctl --user start autocutsel
 
 ```console
 curl -sfL https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/maintenance.service | \
-sudo tee /etc/systemd/system/maintenance.service &&
+sudo tee /etc/systemd/system/maintenance.service > /dev/null &&
 sudo systemctl daemon-reload &&
 sudo systemctl enable maintenance &&
 sudo systemctl start maintenance
