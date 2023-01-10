@@ -6,7 +6,7 @@ En la búsqueda de un sistema operativo que consuma pocos recursos y que nos pro
 
 ## Preparación
 
-1. Descargar la imagen del sistema operativo [Debian 11 Netinst AMD64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.5.0-amd64-netinst.iso).
+1. Descargar la imagen del sistema operativo [Debian 11 Netinst AMD64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.6.0-amd64-netinst.iso).
 2. Abrir VirtualBox y crear una **nueva máquina virtual** con las siguientes características:
 
 | Parámetro | Valor                       |
