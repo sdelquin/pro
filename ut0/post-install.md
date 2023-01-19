@@ -101,3 +101,25 @@ curl -fLo ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/
 ```
 
 > 💡 &nbsp;Para que los cambios surtan efecto, cierra la terminal y vuelve a abrirla.
+
+## Pantalla a negro
+
+Vamos a configurar **un atajo de teclado en <kbd>Ctrl-B</kbd> que pone la pantalla a negro**. ¡Muy útil cuando el profe está explicando!
+
+Lo primero será crear un pequeño programa que lleve a cabo esta acción:
+
+```console
+echo 'xset s blank ; sleep 1 ; xset s activate' | \
+sudo tee /usr/local/bin/black_screen.sh && \
+sudo chmod +x /usr/local/bin/black_screen.sh
+```
+
+A continuación asignamos la combinación de teclas para que ejecute la acción anterior:
+
+```console
+xfconf-query -c xfce4-keyboard-shortcuts -n -t \
+'string' -p '/commands/custom/<Primary><Ctrl>b' -s \
+/usr/local/bin/black_screen.sh
+```
+
+> 💡 Recuerda <kbd>Ctrl-B</kbd> (de **B**lack) para poner la pantalla a negro.
