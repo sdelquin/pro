@@ -106,15 +106,37 @@ curl -fLo ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/
 
 Vamos a configurar **un atajo de teclado en <kbd>Ctrl-B</kbd> que pone la pantalla a negro**. ¡Muy útil cuando el profe está explicando!
 
-Lo primero será crear un pequeño programa que lleve a cabo esta acción:
+Lo primero es instalar el servidor de protector de pantalla:
 
 ```console
-echo 'xset s blank ; sleep 1 ; xset s activate' | \
-sudo tee /usr/local/bin/black_screen.sh && \
+sudo apt install -y xscreensaver
+```
+
+Ahora creamos un servicio para que funcione de manera permanente (y se active en el arranque):
+
+```console
+mkdir -p ~/.config/systemd/user &&
+curl -fLo ~/.config/systemd/user/xscreensaver.service https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/xscreensaver.service &&
+systemctl --user daemon-reload &&
+systemctl --user enable xscreensaver &&
+systemctl --user start xscreensaver
+```
+
+Seguidamente especificamos el tipo de protector de pantalla todo a negro:
+
+```console
+echo 'mode: blank' > ~/.xscreensaver
+```
+
+A continuación necesitamos un pequeño programa que lance este protector de pantalla:
+
+```console
+echo 'xscreensaver-command -activate' |
+sudo tee /usr/local/bin/black_screen.sh &&
 sudo chmod +x /usr/local/bin/black_screen.sh
 ```
 
-A continuación asignamos la combinación de teclas para que ejecute la acción anterior:
+Por último debemos asignar la combinación de teclas para que ejecute la acción anterior:
 
 ```console
 xfconf-query -c xfce4-keyboard-shortcuts -n -t \
@@ -122,4 +144,4 @@ xfconf-query -c xfce4-keyboard-shortcuts -n -t \
 /usr/local/bin/black_screen.sh
 ```
 
-> 💡 Recuerda <kbd>Ctrl-B</kbd> (de **B**lack) para poner la pantalla a negro.
+> 💡 Recuerda <kbd>Ctrl-B</kbd> (de **B**lack) para poner la pantalla a negro _(puede tardar un par de segundos en activarse)_.
