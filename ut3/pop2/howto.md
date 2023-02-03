@@ -13,7 +13,7 @@ pycheck update
 - Trabaja en la carpeta adecuada:
 
 ```console
-mkdir -p ~/pro/{{ ut }}/{{ pop }} && cd ~/pro/{{ ut }}/{{ pop }}
+mkdir -p ~/pro/ut3/pop2 && cd ~/pro/ut3/pop2
 ```
 
 - Mira los ejercicios del examen y crea las plantillas:
@@ -41,10 +41,10 @@ code .
 - Estando en la carpeta de trabajo, comprime los archivos con:
 
 ```console
-cd ~/pro/{{ ut }}/{{ pop }} && zip {{ ut }}-{{ pop }}.zip *.py
+cd ~/pro/ut3/pop2 && zip ut3-pop2.zip *.py
 ```
 
-- Sube únicamente el fichero comprimido `{{ ut }}-{{ pop }}.zip`
+- Sube únicamente el fichero comprimido `ut3-pop2.zip`
 
 ## Evaluación
 

@@ -8,7 +8,7 @@
 pycheck update
 ```
 
-> ⚠️ Si este comando da error, puedes actualizar con `pip install -U git+http://g.pycheck.es`
+> ⚠️ Si este comando da error, puedes actualizar con `pip install -U git+http://get.pycheck.es`
 
 - Trabaja en la carpeta adecuada:
 
