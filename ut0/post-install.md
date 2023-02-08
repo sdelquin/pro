@@ -145,3 +145,56 @@ xfconf-query -c xfce4-keyboard-shortcuts -n -t \
 ```
 
 > 💡 Recuerda <kbd>Ctrl-B</kbd> (de **B**lack) para poner la pantalla a negro _(puede tardar un par de segundos en activarse)_.
+
+## Traductor
+
+Vamos a instalar este [traductor en línea de comandos](https://github.com/soimort/translate-shell) que puede ser de mucha utilidad.
+
+Primero instalamos sus dependencias:
+
+```console
+sudo apt install -y gawk
+```
+
+Y ahora descargamos e instalamos la aplicación:
+
+```console
+curl -sfL git.io/trans |
+sudo tee /usr/local/bin/trans > /dev/null && \
+sudo chmod +x /usr/local/bin/trans
+```
+
+### Usando las traducciones
+
+No es necesario que ejecutes los siguientes comandos, sólo te permiten tener una idea de cómo utilizar el traductor.
+
+**Traducir del inglés al español**
+
+```console
+$ trans hello
+hello
+/həˈlō/
+
+Hola
+
+Traducciones de hello
+[ English -> Español ]
+
+hello
+    Hola
+```
+
+**Traducir del español al inglés**
+
+```console
+$ trans :en hola
+hola
+
+hello
+
+Traducciones de hola
+[ Español -> English ]
+
+hola
+    hello
+```
