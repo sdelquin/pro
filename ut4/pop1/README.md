@@ -10,7 +10,7 @@
 
 ## Ejercicio 1
 
-`pycheck boot sort_id`
+`pycheck boot fix_id`
 
 ## Ejercicio 2
 
