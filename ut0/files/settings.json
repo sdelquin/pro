@@ -5,13 +5,5 @@
   // Python
   "python.formatting.provider": "black",
   "python.analysis.autoImportCompletions": false,
-  "python.linting.mypyEnabled": true,
-  "python.linting.mypyArgs": [
-    "--disable-error-code",
-    "assignment",
-    "--disable-error-code",
-    "var-annotated",
-    "--disable-error-code",
-    "import"
-  ]
+  "python.linting.mypyEnabled": true
 }

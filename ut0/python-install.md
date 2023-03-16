@@ -75,6 +75,12 @@ A continuación instalamos los paquetes que necesitamos para desarrollo:
 pip install black mypy ipython wheel cowsay
 ```
 
+Configuración de Mypy:
+
+```console
+curl -fLo ~/.mypy.ini https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/.mypy.ini
+```
+
 ## La vaca feliz
 
 Si todo ha ido bien, podrás ver a la vaca feliz 🐮:
