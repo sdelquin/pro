@@ -93,10 +93,6 @@ class Host:
         Ejemplo: "192.168.1.5/24"'''
         pass
 
-    def __eq__(self, other: Host | object):
-        '''Indica si dos hosts tienen la misma dirección IP (incluyendo máscara)'''
-        pass
-
     def __iter__(self):
         '''Devuelve el iterador para el Host'''
         return NetworkIter(self)

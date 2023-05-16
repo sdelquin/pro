@@ -150,18 +150,6 @@ def test_host_repr(host1: Host, host2: Host, host3: Host):
     assert repr(host3) == '10.0.1.5/8'
 
 
-@pytest.mark.skip(reason='Me olvidé de ponerlo en el examen')
-def test_hosts_are_equal(host1: Host):
-    host1_copy = Host(host1.ip, mask=host1.mask)
-    assert host1 == host1_copy
-
-    host1_fake = Host(host1.ip, mask=0)
-    assert host1 != host1_fake
-
-    host1_fake = Host('192.0.0.0', mask=host1.mask)
-    assert host1 != host1_fake
-
-
 def test_build_host_from_bip():
     host = Host.from_bip('11000000101010000000000100000101', mask=24)
     assert repr(host) == '192.168.1.5/24'
