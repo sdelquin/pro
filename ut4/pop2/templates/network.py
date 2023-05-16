@@ -54,14 +54,14 @@ class Host:
     @property
     def has_network_addr(self) -> bool:
         '''Indica si la dirección IP corresponde con la dirección de red.
-        En una dirección de red, la parte de host de la IP tiene todos los bits a 1.
+        En una dirección de red, la parte de host de la IP tiene todos los bits a 0.
         Ejemplo: "192.168.1.0"'''
         pass
 
     @property
     def has_broadcast_addr(self) -> bool:
         '''Indica si la dirección IP corresponde con la dirección de broadcast.
-        En una dirección de broadcast, la parte de host de la IP tiene todos los bits a 0.
+        En una dirección de broadcast, la parte de host de la IP tiene todos los bits a 1.
         Ejemplo: "192.168.1.255"'''
         pass
 
