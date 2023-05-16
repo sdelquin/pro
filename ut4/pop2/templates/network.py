@@ -66,7 +66,7 @@ class Host:
         pass
 
     @property
-    def nclass(self):
+    def nclass(self) -> str:
         '''Devuelve la clase de la red: A, B o C.
         → Ver https://bit.ly/42Pgm2k'''
         pass
