@@ -11,3 +11,5 @@ ut*/pop*/*
 !ut3/pop1/README.md
 !ut3/pop2/README.md
 !ut4/pop1/README.md
+!ut4/pop2/*
+ut4/pop2/network.py
