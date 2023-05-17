@@ -131,7 +131,7 @@ class NetworkIter:
         #  [1, 1, 1, 1, 1, 1, 1, 0],
         #  [1, 1, 1, 1, 1, 1, 1, 1]]
         # ¡Ojo que es un generador!
-        self.host_bip_segments = NetworkIter.comb((0, 1), self.host.addr_host_size)
+        self.host_bip_segments = NetworkIter.cart_prod((0, 1), self.host.addr_host_size)
 
     def __next__(self):
         '''Genera el siguiente host dentro de la subred en la que se encuentra el host original.
@@ -141,15 +141,16 @@ class NetworkIter:
         pass
 
     @staticmethod
-    def comb(values, n):
-        '''Genera todas las combinaciones de "values" de tamaño "n"'''
+    def cart_prod(values, n):
+        '''Producto cartesiano.
+        Genera todas las combinaciones de "values" de tamaño "n"'''
 
-        def comb_helper(items, k=0):
+        def helper(items, k=0):
             if k == n:
-                yield items.copy()
+                yield tuple(items)
             else:
                 for v in values:
                     items[k] = v
-                    yield from comb_helper(items, k + 1)
+                    yield from helper(items, k + 1)
 
-        return comb_helper([None] * n)
+        return helper([None] * n)
