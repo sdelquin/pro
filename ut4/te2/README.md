@@ -8,7 +8,7 @@
 
 Escriba un programa en Python que permita simular el comportamiento de una partida de cartas de poker modalidad **TEXAS HOLDEM** utilizando técnicas de programación orientada a objetos.
 
-## Propuestas de responsabilidades
+## Propuestas de datos y responsabilidades
 
 ### Game
 
@@ -74,13 +74,22 @@ Escriba un programa en Python que permita simular el comportamiento de una parti
 
 ## Propuesta de módulos
 
-- `main.py`
-- `game.py`: `Game`
-- `roles.py`: `Dealer` y `Player`
-- `cards.py`: `Card`, `Deck` y `Hand`
-- `helpers.py`
+Propuesta de módulos y clases por módulo:
 
-## Módulo helpers
+```
+├── main.py
+├── game.py
+│   └── Game
+├── cards.py
+│   ├── Card
+│   ├── Deck
+│   └── Hand
+└── roles.py
+    ├── Dealer
+    └── Player
+```
+
+### Módulo helpers
 
 El fichero [helpers.py](./helpers.py) contiene funciones de apoyo al desarrollo del proyecto.
 
