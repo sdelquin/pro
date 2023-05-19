@@ -93,6 +93,63 @@ Propuesta de módulos y clases por módulo:
 
 El fichero [helpers.py](./helpers.py) contiene funciones de apoyo al desarrollo del proyecto.
 
+#### `randint(a, b)`
+
+Genera un valor entero aleatorio entre `a` y `b` incluidos:
+
+```python
+>>> import helpers
+
+>>> helpers.randint(1, 52)
+8
+
+>>> helpers.randint(1, 4)
+2
+```
+
+Si sólo se pasa un argumento, devolverá un valor aleatorio entre 0 y el argumento pasado:
+
+```python
+>>> helpers.randint(10)
+1
+
+>>> helpers.randint(10)
+6
+```
+
+#### `shuffle(items)`
+
+Baraja los elementos que hay en `items`. No devuelve nada. La modificación queda en `items`:
+
+```python
+>>> cards = ['A', 'J', 'K', 'Q']
+
+>>> helpers.shuffle(cards)
+
+>>> cards
+['Q', 'A', 'K', 'J']
+```
+
+#### `combinations(values, n)`
+
+Genera todas las combinaciones posibles de `values` de tamaño `n`:
+
+```python
+>>> list(helpers.combinations((1, 2, 3, 4, 5), n=3))
+[(1, 2, 3),
+ (1, 2, 4),
+ (1, 2, 5),
+ (1, 3, 4),
+ (1, 3, 5),
+ (1, 4, 5),
+ (2, 3, 4),
+ (2, 3, 5),
+ (2, 4, 5),
+ (3, 4, 5)]
+```
+
+> 💡 El parámetro `n` debe pasarse por nombre.
+
 ## Referencias
 
 https://en.wikipedia.org/wiki/List_of_poker_hands
