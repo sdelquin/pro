@@ -150,6 +150,12 @@ Genera todas las combinaciones posibles de `values` de tamaño `n`:
 
 > 💡 El parámetro `n` debe pasarse por nombre.
 
+## Notas
+
+- El programa **no debe ser interactivo**, simplemente se ejecuta y dice quién gana la partida.
+- Los nombres de los jugadores pueden ser generados aleatoriamente o secuencialmente empezando desde 1.
+- No se puede usar ningún módulo de la librería estándar salvo las funciones de apoyo que se aportan.
+
 ## Referencias
 
 https://en.wikipedia.org/wiki/List_of_poker_hands
