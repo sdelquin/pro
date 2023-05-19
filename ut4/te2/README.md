@@ -82,7 +82,7 @@ Escriba un programa en Python que permita simular el comportamiento de una parti
 
 ## Módulo helpers
 
-Tiene funciones de apoyo al desarrollo del proyecto.
+El fichero [helpers.py](./helpers.py) contiene funciones de apoyo al desarrollo del proyecto.
 
 ## Referencias
 
