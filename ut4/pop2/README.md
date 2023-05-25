@@ -30,4 +30,4 @@ Esta prueba gira en torno al trabajo con **redes**, concretamente de equipos ("h
 - Cada test cuenta 0.5 puntos.
 - La nota final corresponderá a la suma de los tests que hayan pasado.
 - Hay que tener en cuenta que se puede bajar nota en función de la calidad del código implementado.
-- La copia parcial o total supondrá un 0 en la nota final.
+- La copia parcial o total supondrá un 0 en la nota global de la prueba.
