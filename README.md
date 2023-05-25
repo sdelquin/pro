@@ -12,3 +12,5 @@ Materiales para la docencia del módulo **Programación** de primer curso del ci
 | [UT1](./ut1/) | Identificación de los elementos de un programa informático |
 | [UT2](./ut2/) | Uso de estructuras de control                              |
 | [UT3](./ut3/) | Aplicación de las estructuras de almacenamiento            |
+| [UT4](./ut4/) | Modularidad                                                |
+| [UT5](./ut5/) | Librerías                                                  |
