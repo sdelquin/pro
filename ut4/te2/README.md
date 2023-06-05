@@ -8,7 +8,22 @@
 
 Escriba un programa en Python que permita simular el comportamiento de una partida de cartas de poker modalidad **TEXAS HOLDEM** utilizando técnicas de programación orientada a objetos.
 
-## Propuestas de datos y responsabilidades
+## Propuesta de módulos
+
+Propuesta de módulos y clases por módulo:
+
+```
+├── test_poker.py
+├── game.py
+│   └── Game
+├── cards.py
+│   ├── Card
+│   ├── Deck
+│   └── Hand
+└── roles.py
+    ├── Dealer
+    └── Player
+```
 
 ### Game
 
@@ -29,8 +44,10 @@ Escriba un programa en Python que permita simular el comportamiento de una parti
   - Mazo
   - Jugadores
 - Responsabilidades:
-  - Dar cartas a los jugadores
   - Destapar cartas comunes
+  - Dar cartas a los jugadores
+  - Ver la mejor mano de cada jugador
+  - Dictaminar la mejor mano
 
 ### Player
 
@@ -55,13 +72,7 @@ Escriba un programa en Python que permita simular el comportamiento de una parti
 - Datos:
   - 52 cartas
 - Responsabilidades:
-  - Dar una carta aleatoria
-  - Dar la carta de "arriba"
-  - Dar la carta de "abajo"
-  - Barajar
-  - Ver una carta aleatoria
-  - Ver la carta de "arriba"
-  - Ver la carta de "abajo"
+  - Dar cartas aleatorias
 
 ### Hand
 
@@ -70,24 +81,42 @@ Escriba un programa en Python que permita simular el comportamiento de una parti
 - Responsabilidades:
   - Descubrir la categoría de la mano
   - Asignar una puntuación a la categoría
-  - Saber si una mano es mejor que otra (ranking)
+  - Saber si una mano es mejor que otra
 
-## Propuesta de módulos
+## Comprobación
 
-Propuesta de módulos y clases por módulo:
+Debe existir una función `game.get_winner()` con la siguiente definición:
 
+```python
+def get_winner(
+    players: list[Player],
+    common_cards: list[Card],
+    private_cards: list[list[Card]],
+) -> tuple[Player | None, Hand]:
 ```
-├── main.py
-├── game.py
-│   └── Game
-├── cards.py
-│   ├── Card
-│   ├── Deck
-│   └── Hand
-└── roles.py
-    ├── Dealer
-    └── Player
-```
+
+Esta función debe retornar el jugador ganador y la mano ganadora. En caso de empate, el jugador será valor `None` pero la mano ganadora sí tendrá un valor.
+
+→ Puedes descargar aquí el [fichero de tests](solution/test_poker.py) para pytest.
+
+### Requerimientos de implementación
+
+- Se debe poder construir un objecto `Player` pasando el nombre del jugador. **Ejemplos**: `Player('Player 1'), Player('Player 2')`
+- Se debe poder construir un objecto `Card` desde una cadena de texto. **Ejemplos**: `Card('Q♠'), Card('7♣'), Card('A♠')`
+- El objeto `Hand` debe contener un atributo `cat` que represente la categoría de la mano, con una de las siguientes constantes:
+- El objeto `Hand` debe contener un atributo `cat` que identifique la categoría de la mano así como un atributo `cat_rank` que almacene el "ranking" de su categoría. En la mayoría de casos es la carta más alta, pero no siempre. **Ejemplos**:
+
+| `hand.cat`             | `hand.cat_rank` | Explicación                                   |
+| ---------------------- | --------------- | --------------------------------------------- |
+| `Hand.HIGH_CARD`       | `'J'`           | Carta más álta                                |
+| `Hand.ONE_PAIR`        | `'5'`           | Carta más álta                                |
+| `Hand.TWO_PAIR`        | `('10', '7')`   | Tupla con cartas más altas (de mayor a menor) |
+| `Hand.THREE_OF_A_KIND` | `'K'`           | Carta más álta                                |
+| `Hand.STRAIGTH`        | `'9'`           | Carta más álta                                |
+| `Hand.FLUSH`           | `'Q'`           | Carta más álta                                |
+| `Hand.FULL_HOUSE`      | `('3', 'J')`    | Tupla con carta del trío y carta de la pareja |
+| `Hand.FOUR_OF_A_KIND`  | `'Q'`           | Carta más álta                                |
+| `Hand.STRAIGHT_FLUSH`  | `'7'`           | Carta más álta                                |
 
 ### Módulo helpers
 
@@ -150,12 +179,8 @@ Genera todas las combinaciones posibles de `values` de tamaño `n`:
 
 > 💡 El parámetro `n` debe pasarse por nombre.
 
-## Notas
-
-- El programa **no debe ser interactivo**, simplemente se ejecuta y dice quién gana la partida.
-- Los nombres de los jugadores pueden ser generados aleatoriamente o secuencialmente empezando desde 1.
-- No se puede usar ningún módulo de la librería estándar salvo las funciones de apoyo que se aportan.
-
 ## Referencias
 
-https://en.wikipedia.org/wiki/List_of_poker_hands
+- [Anatomía de una carta de poker](https://bit.ly/45KP9jp)
+- [Lista de posibles manos ganadoras](https://en.wikipedia.org/wiki/List_of_poker_hands)
+- [Calculadora online de mano ganadora](https://www.pokerlistings.com/which-hand-wins-calculator)

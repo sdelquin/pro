@@ -13,3 +13,5 @@ ut*/pop*/*
 !ut4/pop1/README.md
 !ut4/pop2/*
 ut4/pop2/network.py
+ut4/te2/solution/*
+!ut4/te2/solution/test_poker.py
