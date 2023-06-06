@@ -15,3 +15,5 @@ ut*/pop*/*
 ut4/pop2/network.py
 ut4/te2/solution/*
 !ut4/te2/solution/test_poker.py
+!ut5/pop1/*
+ut5/pop1/mail.py
