@@ -49,7 +49,7 @@ class Mail(DbUtils):
         From: <remitente>
         To: <destinatario>
         ---
-        <asunto pasado a mayúsculas>
+        <asunto pasado a mayúsculas>:
         <cuerpo del correo>
         '''
         pass
