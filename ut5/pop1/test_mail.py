@@ -200,7 +200,7 @@ def test_send_mail_from_mailserver_fails_when_not_logged_in(mailserver1: MailSer
 
 
 def test_send_mail_from_mailserver_fails_when_invalid_recipient_email_format(
-    mailserver1: MailServer,
+    mailserver1: MailServer, db_con: sqlite3.Connection
 ):
     RECIPIENTS = ('stinner$python.org', 'stinner@python', 'stinner@python&org')
     SUBJECT = 'New Python'
@@ -216,6 +216,12 @@ def test_send_mail_from_mailserver_fails_when_invalid_recipient_email_format(
             )
         assert str(err.value) == f'Recipient "{recipient}" has invalid mail format!'
 
+    sql = 'SELECT * FROM activity WHERE recipient=?'
+    db_cur = db_con.cursor()
+    for recipient in RECIPIENTS:
+        res = db_cur.execute(sql, (recipient,))
+        assert res.fetchone() is None
+
 
 def test_get_sent_emails_from_mailserver(mailserver1: MailServer, db_con: sqlite3.Connection):
     EMAILS = (
@@ -230,9 +236,9 @@ def test_get_sent_emails_from_mailserver(mailserver1: MailServer, db_con: sqlite
     db_con.commit()
 
     mailserver1.login()
-    emails = mailserver1.get_emails(sent=False)
+    emails = mailserver1.get_emails(sent=True)
     assert isinstance(emails, GeneratorType)
-    for email, expected_email in zip(emails, EMAILS):
+    for email, expected_email in zip(emails, EMAILS, strict=True):
         sender, recipient, subject, body = expected_email
         assert email.sender == sender
         assert email.recipient == recipient
@@ -255,7 +261,7 @@ def test_get_received_emails_from_mailserver(mailserver1: MailServer, db_con: sq
     mailserver1.login()
     emails = mailserver1.get_emails(sent=False)
     assert isinstance(emails, GeneratorType)
-    for email, expected_email in zip(emails, EMAILS):
+    for email, expected_email in zip(emails, EMAILS, strict=True):
         sender, recipient, subject, body = expected_email
         assert email.sender == sender
         assert email.recipient == recipient
