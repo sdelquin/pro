@@ -2,6 +2,9 @@
 .artwork
 .DS_Store
 *.pyc
+htmlcov
+.coverage
+solution/
 ut*/pop*/*
 !ut*/**/howto.md
 !ut1/pop0/README.md
@@ -11,9 +14,8 @@ ut*/pop*/*
 !ut3/pop1/README.md
 !ut3/pop2/README.md
 !ut4/pop1/README.md
-!ut4/pop2/*
-ut4/pop2/network.py
-ut4/te2/solution/*
 !ut4/te2/solution/test_poker.py
-!ut5/pop1/*
-ut5/pop1/mail.py
+!ut5/pop1/create_db.py
+!ut5/pop1/templates/
+!ut5/pop1/README.md
+!ut5/pop1/test_mail.py
