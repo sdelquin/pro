@@ -19,3 +19,7 @@ ut*/pop*/*
 !ut5/pop1/templates/
 !ut5/pop1/README.md
 !ut5/pop1/test_mail.py
+!ut5/pop2/create_db.py
+!ut5/pop2/templates/
+!ut5/pop2/README.md
+!ut5/pop2/test_ecommerce.py
