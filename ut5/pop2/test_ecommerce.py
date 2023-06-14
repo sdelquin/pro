@@ -122,7 +122,7 @@ def test_build_user(user1: User, dbcon: sqlite3.Connection):
 
 
 def test_build_user_fails_when_name_is_incorrect():
-    for username in ('bruce', '4bruce001', 'bruce743z', 'bruce:R9', 'Bruce87692'):
+    for username in ('bruce', '4bruce001', 'bruce743z', 'bruce:R9', 'Bruce87692', 'bru8'):
         with pytest.raises(ValueError) as err:
             User(username, '', '')
         assert str(err.value) == f'User "{username}" does not follow security rules!'

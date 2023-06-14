@@ -79,7 +79,7 @@ class Product:
 
     def sell(self, qty: int) -> None:
         '''Si la cantidad a vender es mayor que el stock hay que lanzar una excepción de tipo
-        ValueError con el mensaje: Not enough stock for product "<nombre-producto>"
+        ValueError con el mensaje: Not enough stock for product "<nombre-producto>!"
         Si todo ha ido bien hay que actualizar el atributo de stock del objeto y actualizar
         la información del objeto en la base de datos.'''
         pass
