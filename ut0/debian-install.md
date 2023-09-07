@@ -4,29 +4,87 @@
 
 En la búsqueda de un sistema operativo que consuma pocos recursos y que nos proporcione las herramientas que necesitamos, vamos a trabajar con [Debian](https://www.debian.org/index.es.html), un sistema operativo completamente libre que es un referente dentro del mundo Linux.
 
-## Preparación
+## Descarga de la imagen
 
-1. Descargar la imagen del sistema operativo [Debian 12 Netinst AMD64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso).
-2. Abrir VirtualBox y crear una **nueva máquina virtual** con las siguientes características:
+Descargar la imagen del sistema operativo [Debian 12 Netinst AMD64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso). Lo más habitual es que quede en la carpeta de "Descargas".
 
-| Parámetro | Valor                       |
-| --------- | --------------------------- |
-| Nombre    | _(pregunta al profe)_       |
-| Carpeta   | _(la que está por defecto)_ |
-| Tipo      | Linux                       |
-| Versión   | Debian (64-bit)             |
-| RAM       | 4096MB                      |
+> ⚠️ Si estás dentro de la red de informática del centro puedes descargar la imagen [desde este enlace](http://amy/daw/1daw/pro/debian-12.1.0-amd64-netinst.iso).
 
-3. Disco duro → Crear un disco duro virtual ahora
-4. Tipo de archivo de disco duro → VDI
-5. Almacenamiento en unidad de disco duro → Tamaño fijo
-6. Tamaño del disco duro → 30GB
-7. Disco duro → Crear un disco duro virtual ahora
-8. Una vez creada la máquina, botón derecho sobre la máquina: Configuración → Red → Adaptador 1 → Conectado a: Adaptador puente
+## VirtualBox
 
-**Arrancar la máquina virtual**. En este momento nos pedirá que elijamos un disco de inicio. En el botón de selección hay que localizar la imagen que hemos descargado `.iso` (probablemente estará en la carpeta Descargas).
+VirtualBox es un software de virtualización. En esta sección veremos cómo arrancarlo y crear una máquina virtual.
 
-## Instalación
+### Paso 0
+
+![](./images/virtualbox/virtualbox_start.png)
+
+### Paso 1
+
+![](./images/virtualbox/virtualbox_vm01.png)
+
+### Paso 2
+
+⚠️ **¡Pregunta al profe qué nombre de máquina hay que poner!**
+
+![](./images/virtualbox/virtualbox_vm02.png)
+
+### Paso 3
+
+![](./images/virtualbox/virtualbox_vm03.png)
+
+### Paso 4
+
+![](./images/virtualbox/virtualbox_vm04.png)
+
+### Paso 5
+
+![](./images/virtualbox/virtualbox_vm05.png)
+
+### Paso 6
+
+![](./images/virtualbox/virtualbox_vm06.png)
+
+### Paso 7
+
+![](./images/virtualbox/virtualbox_vm07.png)
+
+### Paso 8
+
+![](./images/virtualbox/virtualbox_vm08.png)
+
+### Paso 9
+
+![](./images/virtualbox/virtualbox_vm09.png)
+
+### Paso 10
+
+![](./images/virtualbox/virtualbox_vm10.png)
+
+### Paso 11
+
+![](./images/virtualbox/virtualbox_vm11.png)
+
+### Paso 12
+
+![](./images/virtualbox/virtualbox_vm12.png)
+
+### Paso 13
+
+![](./images/virtualbox/virtualbox_vm13.png)
+
+### Paso 14
+
+![](./images/virtualbox/virtualbox_vm14.png)
+
+### Paso 15
+
+![](./images/virtualbox/virtualbox_vm15.png)
+
+### Paso 16
+
+![](./images/virtualbox/virtualbox_vm16.png)
+
+## Instalación del sistema operativo
 
 ⚠️ **¡Utilizar las teclas de cursor, ya que el ratón no funciona durante la instalación!**
 
@@ -180,11 +238,45 @@ En la búsqueda de un sistema operativo que consuma pocos recursos y que nos pro
 
 ### Paso 34
 
-⚠️ **¡Introduce tu usuario habitual y la contraseña correspondiente!**
-
 ![](./images/debian-install/debian-install34.png)
 
+### Paso 35
+
+![](./images/debian-install/debian-install35.png)
+
+### Paso 36
+
+![](./images/debian-install/debian-install36.png)
+
+### Paso 37
+
+⚠️ **¡Introduce tu usuario habitual y la contraseña correspondiente!**
+
+![](./images/debian-install/debian-install37.png)
+
+## Desmontar la imagen del sistema operativo
+
+⚠️ **¡Apaga la máquina virtual antes de nada!**
+
+### Paso 1
+
+![](./images/virtualbox/virtualbox_umount_iso1.png)
+
+### Paso 2
+
+![](./images/virtualbox/virtualbox_umount_iso2.png)
+
+### Paso 3
+
+![](./images/virtualbox/virtualbox_umount_iso3.png)
+
+### Paso 4
+
+![](./images/virtualbox/virtualbox_umount_iso4.png)
+
 ## Sudoers
+
+⚠️ **¡Arranca la máquina virtual antes de nada!**
 
 Por defecto, el único usuario que tiene "superpoderes" en Linux es `root` (superusuario). Pero nos puede venir bien que nuestro usuario "habitual" también sea un superhéroe. Para ello debemos hacerlo _sudoer_.
 
@@ -201,3 +293,86 @@ su -c "/sbin/addgroup <usuario> sudo"
 A continuación debes **salir de la sesión y volver a entrar** para que los cambios surtan efecto.
 
 ![Cerrar sesión](images/close-session.jpg)
+
+## VirtualBox Guest Additions
+
+Las VirtualBox Guest Additions conforman un módulo que nos permite poner el **escritorio** de nuestra máquina virtual **a toda pantalla** así como **habilitar el portapapeles con la máquina anfitriona**.
+
+⚠️ **¡Con la máquina arrancada!**
+
+### Paso 1
+
+![](./images/virtualbox/virtualbox_ga01.png)
+
+### Paso 2
+
+![](./images/virtualbox/virtualbox_ga02.png)
+
+### Paso 3
+
+![](./images/virtualbox/virtualbox_ga03.png)
+
+### Paso 4
+
+![](./images/virtualbox/virtualbox_ga04.png)
+
+### Paso 5
+
+![](./images/virtualbox/virtualbox_ga05.png)
+
+### Paso 6
+
+![](./images/virtualbox/virtualbox_ga06.png)
+
+### Paso 7
+
+Abrimos una terminal:
+
+![](./images/virtualbox/virtualbox_ga07.png)
+
+### Paso 8
+
+Y escribimos los siguientes comandos:
+
+```console
+$ sudo mount /dev/cdrom
+$ cd /media/cdrom
+$ sh ./VBoxLinuxAdditions.run
+$ sudo /sbin/poweroff
+```
+
+> ⚠️ El símbolo `$` no hay que ponerlo. Sirve para identificar la línea de comandos.
+
+## Desmontar el CD de VirtualBox Guest Additions
+
+### Paso 1
+
+![](./images/virtualbox/virtualbox_umount_ga1.png)
+
+### Paso 2
+
+![](./images/virtualbox/virtualbox_umount_ga2.png)
+
+### Paso 3
+
+![](./images/virtualbox/virtualbox_umount_ga3.png)
+
+### Paso 4
+
+![](./images/virtualbox/virtualbox_umount_ga4.png)
+
+## Habilitar el portapapeles bidireccional
+
+### Paso 1
+
+![](./images/virtualbox/virtualbox_bidclip1.png)
+
+### Paso 2
+
+![](./images/virtualbox/virtualbox_bidclip2.png)
+
+## Últimas comprobaciones
+
+Volvemos a arrancar la máquina virtual y deberíamos poder ponerla a pantalla completa con una visualización adecuada:
+
+![](./images/virtualbox/virtualbox_fullscreen.png)
