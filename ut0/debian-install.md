@@ -1,10 +1,15 @@
 # Instalación del sistema operativo
 
+- [Descarga de la imagen](#descarga-de-la-imagen)
+- [VirtualBox](#virtualbox)
+- [Instalación del sistema operativo](#instalación-del-sistema-operativo-1)
+- [VirtualBox Guest Additions](#virtualbox-guest-additions)
+
+## Descarga de la imagen
+
 ![Debian Logo](images/debian-logo.jpg)
 
 En la búsqueda de un sistema operativo que consuma pocos recursos y que nos proporcione las herramientas que necesitamos, vamos a trabajar con [Debian](https://www.debian.org/index.es.html), un sistema operativo completamente libre que es un referente dentro del mundo Linux.
-
-## Descarga de la imagen
 
 Descargar la imagen del sistema operativo [Debian 12 Netinst AMD64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso). Lo más habitual es que quede en la carpeta de "Descargas".
 
@@ -254,27 +259,27 @@ VirtualBox es un software de virtualización. En esta sección veremos cómo arr
 
 ![](./images/debian-install/debian-install37.png)
 
-## Desmontar la imagen del sistema operativo
+### Desmontar la imagen del sistema operativo
 
 ⚠️ **¡Apaga la máquina virtual antes de nada!**
 
-### Paso 1
+#### Paso 1
 
 ![](./images/virtualbox/virtualbox_umount_iso1.png)
 
-### Paso 2
+#### Paso 2
 
 ![](./images/virtualbox/virtualbox_umount_iso2.png)
 
-### Paso 3
+#### Paso 3
 
 ![](./images/virtualbox/virtualbox_umount_iso3.png)
 
-### Paso 4
+#### Paso 4
 
 ![](./images/virtualbox/virtualbox_umount_iso4.png)
 
-## Sudoers
+### Sudoers
 
 ⚠️ **¡Arranca la máquina virtual antes de nada!**
 
@@ -343,35 +348,35 @@ $ sudo /sbin/poweroff
 
 > ⚠️ El símbolo `$` no hay que ponerlo. Sirve para identificar la línea de comandos.
 
-## Desmontar el CD de VirtualBox Guest Additions
+### Desmontar el CD de VirtualBox Guest Additions
 
-### Paso 1
+#### Paso 1
 
 ![](./images/virtualbox/virtualbox_umount_ga1.png)
 
-### Paso 2
+#### Paso 2
 
 ![](./images/virtualbox/virtualbox_umount_ga2.png)
 
-### Paso 3
+#### Paso 3
 
 ![](./images/virtualbox/virtualbox_umount_ga3.png)
 
-### Paso 4
+#### Paso 4
 
 ![](./images/virtualbox/virtualbox_umount_ga4.png)
 
-## Habilitar el portapapeles bidireccional
+### Habilitar el portapapeles bidireccional
 
-### Paso 1
+#### Paso 1
 
 ![](./images/virtualbox/virtualbox_bidclip1.png)
 
-### Paso 2
+#### Paso 2
 
 ![](./images/virtualbox/virtualbox_bidclip2.png)
 
-## Últimas comprobaciones
+### Últimas comprobaciones
 
 Volvemos a arrancar la máquina virtual y deberíamos poder ponerla a pantalla completa con una visualización adecuada:
 
