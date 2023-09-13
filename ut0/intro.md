@@ -173,6 +173,8 @@ Calificación de cada evaluación:
 | 2EVAL | 30%   | 70% 🔒 |        |
 | 3EVAL | 20%   | 20%    | 60% 🔒 |
 
+🔄 Modelo de evaluación continua con memoria y candado
+
 ---
 
 ## Unidades de trabajo
