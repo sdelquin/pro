@@ -6,11 +6,11 @@ Materiales para la docencia del módulo **Programación** de primer curso del ci
 
 ## Unidades de trabajo
 
-| Unidad        | Descripción                                                |
-| ------------- | ---------------------------------------------------------- |
-| [UT0](./ut0/) | Primeros pasos                                             |
-| [UT1](./ut1/) | Identificación de los elementos de un programa informático |
-| [UT2](./ut2/) | Uso de estructuras de control                              |
-| [UT3](./ut3/) | Aplicación de las estructuras de almacenamiento            |
-| [UT4](./ut4/) | Modularidad                                                |
-| [UT5](./ut5/) | Librerías                                                  |
+| Unidad        | Descripción                        |
+| ------------- | ---------------------------------- |
+| [UT0](./ut0/) | Preparación del entorno de trabajo |
+| [UT1](./ut1/) | Tipos de datos                     |
+| [UT2](./ut2/) | Control de flujo                   |
+| [UT3](./ut3/) | Estructuras de datos               |
+| [UT4](./ut4/) | Modularidad                        |
+| [UT5](./ut5/) | Librerías                          |
