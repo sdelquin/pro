@@ -4,6 +4,7 @@
 *.pyc
 htmlcov
 .coverage
+ut0/chat_done.dat
 solution/
 ut*/pop*/*
 !ut*/**/howto.md
