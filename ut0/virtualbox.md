@@ -3,7 +3,7 @@
 Abrimos una terminal **desde la máquina real** y ejecutamos lo siguiente:
 
 ```console
-curl http://amy/daw/1daw/pro/bootstrap-pro.sh | bash
+curl http://amy/daw/1daw/pro/bootstrap.sh | bash -s pro
 ```
 
 Ahora abrimos VirtualBox y debería aparecer una nueva máquina virtual llamada "pro". Arrancamos la máquina y entramos con estas credenciales:
@@ -14,7 +14,7 @@ Ahora abrimos VirtualBox y debería aparecer una nueva máquina virtual llamada 
 Abrimos una terminal **desde la máquina virtual** y ejecutamos lo siguiente:
 
 ```console
-curl http://amy/daw/1daw/pro/hostname-pro.sh | bash
+curl http://amy/daw/1daw/pro/hostname.sh | bash -s pro
 ```
 
 > ⚠️ Cuando nos lo solicite tendremos que poner la contraseña.
