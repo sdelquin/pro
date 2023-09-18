@@ -1,9 +1,0 @@
-[Unit]
-Description=Maintenance script
-After=network.target
-
-[Service]
-ExecStart=/bin/bash -c 'curl -sfL https://raw.githubusercontent.com/sdelquin/pro/main/ut0/files/maintenance.sh | bash > /dev/null 2>&1'
-
-[Install]
-WantedBy=default.target
