@@ -1,26 +1,42 @@
 # VirtualBox
 
-Abrimos una terminal **desde la máquina real** y ejecutamos lo siguiente:
+Abrimos una terminal **desde la máquina real**:
+
+![Open terminal](./images/open-terminal.png)
+
+Y ejecutamos lo siguiente:
 
 ```console
 curl http://amy/daw/1daw/pro/bootstrap.sh | bash -s pro
 ```
 
-Ahora abrimos VirtualBox y debería aparecer una nueva máquina virtual llamada "pro". Arrancamos la máquina y entramos con estas credenciales:
+> ⚠️ Este proceso puede durar varios minutos. ¡Paciencia!
+
+Ahora abrimos VirtualBox:
+
+![Open terminal](./images/open-virtualbox.png)
+
+Debería aparecer una nueva máquina virtual llamada **pro**. Arrancamos esta máquina:
+
+![Open vm](./images/open-vm.png)
+
+En pocos segundos nos aparecerá la **ventana de login**:
+
+![Login](./images/login-vm.png)
+
+Accedemos al sistema con las siguientes credenciales:
 
 - Usuario: `alu`
 - Contraseña: `tranquilidad`
 
-Abrimos una terminal **desde la máquina virtual** y ejecutamos lo siguiente:
+A continuación abrimos una terminal **desde la máquina virtual**:
+
+![Open terminal vm](./images/open-terminal-vm.png)
+
+Y ejecutamos lo siguiente:
 
 ```console
-curl http://amy/daw/1daw/pro/hostname.sh | bash -s pro
+curl http://amy/daw/1daw/pro/setup.sh | bash -s pro
 ```
 
-> ⚠️ Cuando nos lo solicite tendremos que poner la contraseña.
-
-Por último cambiamos la contraseña del usuario `alu` y ponemos una nueva QUE NO SE NOS OLVIDE ejecutando el siguiente comando **en la terminal de la máquina virtual**:
-
-```console
-passwd
-```
+> ⚠️ Cuando nos lo solicite tendremos que poner la contraseña (ojo porque no se ve cuando la escribimos).
