@@ -57,3 +57,4 @@ Aplicaciones → Configuración → Gestor de ventanas → Teclado
 | <kbd>Ctrl+Tab</kbd>     | Moverse entre ficheros abiertos |
 | <kbd>Ctrl+`</kbd>       | Abrir una terminal              |
 | <kbd>Ctrl+Shift+V</kbd> | Renderizar Markdown             |
+| <kbd>Ctrl+Shift+K</kbd> | Borrar línea                    |
