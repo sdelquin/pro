@@ -40,3 +40,11 @@ curl http://amy/daw/1daw/pro/setup.sh | bash -s pro
 ```
 
 > ⚠️ Cuando nos lo solicite tendremos que poner la contraseña (ojo porque no se ve cuando la escribimos).
+
+Por último **modificamos la contraseña** que está por defecto para el usuario `alu` poniendo otra distinta QUE NO DEBEMOS OLVIDAR:
+
+```console
+passwd
+```
+
+![passwd](./images/passwd.png)
