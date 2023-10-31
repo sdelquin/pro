@@ -1,4 +1,4 @@
-# UT1-POP0: Identificación de los elementos de un programa informático
+# UT1-POP0: Tipos de datos
 
 ### PRUEBA OBJETIVA PRÁCTICA → 🧑🏻‍🚒 SIMULACRO
 
