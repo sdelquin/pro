@@ -38,12 +38,13 @@ code .
 
 ## Al finalizar
 
-- Estando en la carpeta de trabajo, comprime los archivos con:
+- Crea un fichero `.zip` con todos los ejercicios de la prueba ejecutando el siguiente comando:
 
 ```console
 cd ~/pro/{{ ut }}/{{ pop }} && zip {{ ut }}-{{ pop }}.zip *.py
 ```
 
+- Abre un navegador **en la máquina virtual** y accede a la entrega de la actividad **en el aula virtual de Programación**.
 - Sube únicamente el fichero comprimido `{{ ut }}-{{ pop }}.zip`
 
 ## Evaluación
