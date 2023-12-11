@@ -17,8 +17,13 @@ Esta sección presupone que dispones en casa de un sistema operativo **Windows**
 
 → Sigue cada guía con detenimiento y pregunta al profe cualquier duda que te surja:
 
-1. [Instalar python](https://github.com/sdelquin/edubase/blob/main/docs/python-install-win.md)
+1. [Instalar Python](https://github.com/sdelquin/edubase/blob/main/docs/python-install-win.md)
 2. [Instalar git](https://github.com/sdelquin/edubase/blob/main/docs/git-install-win.md)
 3. [Instalar pycheck](https://pycheck.es/docs/#instalacion)
-4. [Instalar vscode](https://github.com/sdelquin/edubase/blob/main/docs/vscode-install-win.md)
-5. [Sincronizar la carpeta de trabajo](https://github.com/sdelquin/edubase/blob/main/docs/sync-working-folder.md)
+4. [Instalar VSCode](https://github.com/sdelquin/edubase/blob/main/docs/vscode-install-win.md)
+5. [Configurar VSCode para Python](https://github.com/sdelquin/edubase/blob/main/docs/vscode-python-win.md)
+
+A la hora de **sincronizar tu carpeta de trabajo** tienes dos opciones:
+
+1. Utilizar un repositorio en GitHub y sincronizar los cambios cuando trabajes en casa o en clase.
+2. [Usar Syncthing](https://github.com/sdelquin/edubase/blob/main/docs/sync-working-folder.md)
