@@ -1,8 +1,9 @@
 import random
 import string
 
+EMPTY = ''
+
 UNEXPLORED = '⬛'
-EMPTY = UNEXPLORED
 WATER = '🟦'
 TOUCHED = '🟧'
 SUNKEN = '🟥'
@@ -46,7 +47,7 @@ def generate_board(
 def show_board(board: list[list[str]]) -> None:
     for row in board:
         for item in row:
-            print(item, end='')
+            print(f'[{item:2s}]', end='')
         print()
 
 
@@ -54,4 +55,3 @@ def show_board(board: list[list[str]]) -> None:
 # ↓↓↓↓↓↓↓↓↓
 
 board = generate_board()
-show_board(board)
