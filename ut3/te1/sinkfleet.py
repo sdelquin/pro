@@ -11,13 +11,13 @@ SUNKEN = '🟥'
 
 def generate_board(
     size: int = 10,
-    sheeps: tuple[tuple[int, int]] = ((5, 1), (4, 1), (3, 2), (2, 1)),
+    ships: tuple[tuple[int, int]] = ((5, 1), (4, 1), (3, 2), (2, 1)),
 ) -> list[list[str]]:
     board = [[EMPTY for _ in range(size)] for _ in range(size)]
-    for sheep_size, num_sheeps in sheeps:
-        placed_sheeps = 0
-        while placed_sheeps < num_sheeps:
-            sheep_id = f'{sheep_size}{string.ascii_uppercase[placed_sheeps]}'
+    for sheep_size, num_ships in ships:
+        placed_ships = 0
+        while placed_ships < num_ships:
+            sheep_id = f'{sheep_size}{string.ascii_uppercase[placed_ships]}'
             row, col = random.randint(0, size), random.randint(0, size)
             step = random.choice((-1, 1))
             row_step, col_step = (step, 0) if random.randint(0, 1) else (0, step)
@@ -39,7 +39,7 @@ def generate_board(
                         board[bc[0]][bc[1]] = EMPTY
                     break
             else:
-                placed_sheeps += 1
+                placed_ships += 1
 
     return board
 
