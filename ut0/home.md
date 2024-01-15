@@ -26,4 +26,4 @@ Esta sección presupone que dispones en casa de un sistema operativo **Windows**
 A la hora de **sincronizar tu carpeta de trabajo** tienes dos opciones:
 
 1. Utilizar un **repositorio en GitHub** y sincronizar los cambios cuando trabajes en casa o en clase. En el modulo **ETS - Entornos de Desarrollo** verás cómo trabajar en profundidad con repositorios de código.
-2. [Usar Syncthing como servicios de sincronización](https://github.com/sdelquin/edubase/blob/main/docs/sync-working-folder.md).
+2. [Usar Syncthing como herramienta de sincronización](https://github.com/sdelquin/edubase/blob/main/docs/sync-working-folder.md).
