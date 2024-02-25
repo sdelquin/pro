@@ -78,3 +78,8 @@ Aquí tienes [un vídeo explicativo](https://www.youtube.com/watch?v=6s0qEROba4g
 ## Notas
 
 - Utilizar sólo herramientas de Python que se hayan visto hasta el momento en clase.
+
+## Entrega
+
+- Sólo hay que subir el fichero con nombre `sinkfleet.py`.
+- Al ser una entrega en grupo basta con que uno de los miembros del grupo suban el fichero.
