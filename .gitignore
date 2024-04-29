@@ -17,3 +17,6 @@ ut*/te*/*
 !ut3/pop1/*.md
 !ut3/pop2/*.md
 !ut4/pop1/*.md
+!ut4/te2/*.md
+!ut4/te2/test*.py
+!ut4/te2/images
