@@ -8,6 +8,7 @@ ut0/chat_done.dat
 solution/
 ut*/pop*/*
 ut*/te*/*
+poker.afdesign
 # Para resetear borrar de aquí para abajo
 !ut1/pop0/*.md
 !ut1/pop1/*.md

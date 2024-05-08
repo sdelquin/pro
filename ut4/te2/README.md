@@ -56,7 +56,8 @@ def get_winner(
 |        | Recibir 5 cartas comunicatorias          |
 |        | Encontrar su mejor combinación de cartas |
 
-Se debe poder construir un objecto `Player` pasando el nombre del jugador. **Ejemplos**: `Player('Player 1'), Player('Player 2')`
+- Se debe poder construir un objecto `Player` pasando el nombre del jugador. **Ejemplos**: `Player('Player 1'), Player('Player 2')`
+- El objeto `Player` debe contener un atributo `name` con el nombre del jugador.
 
 ### Card 🃏
 
@@ -75,19 +76,21 @@ Se debe poder construir un objeto `Card` desde una cadena de texto. **Ejemplos**
 | Palo de la carta | Saber si una mano es mayor que otra |
 
 - Se debe implementar el método `__contains__()` para determinar si una `Card` pertenece a una `Hand`.
-- El objeto `Hand` debe contener un atributo `cat` que identifique la categoría de la mano así como un atributo `cat_rank` que almacene el "ranking" de su categoría. En la mayoría de casos es la carta más alta, pero no siempre. **Ejemplos**:
+- El objeto `Hand` debe contener un atributo `cat` que identifique la categoría de la mano así como un atributo `cat_rank` que almacene el "ranking" de su categoría: en la mayoría de casos será la carta más alta, pero no siempre. **Ejemplos**:
 
-| `hand.cat`             | `hand.cat_rank` | Explicación                                   |
-| ---------------------- | --------------- | --------------------------------------------- |
-| `Hand.HIGH_CARD`       | `'J'`           | Carta más álta                                |
-| `Hand.ONE_PAIR`        | `'5'`           | Carta más álta                                |
-| `Hand.TWO_PAIR`        | `('10', '7')`   | Tupla con cartas más altas (de mayor a menor) |
-| `Hand.THREE_OF_A_KIND` | `'K'`           | Carta más álta                                |
-| `Hand.STRAIGHT`        | `'9'`           | Carta más álta                                |
-| `Hand.FLUSH`           | `'Q'`           | Carta más álta                                |
-| `Hand.FULL_HOUSE`      | `('3', 'J')`    | Tupla con carta del trío y carta de la pareja |
-| `Hand.FOUR_OF_A_KIND`  | `'Q'`           | Carta más álta                                |
-| `Hand.STRAIGHT_FLUSH`  | `'7'`           | Carta más álta                                |
+| `hand.cat`             | Explicación       | `hand.cat_rank` | Explicación                                   |
+| ---------------------- | ----------------- | --------------- | --------------------------------------------- |
+| `Hand.HIGH_CARD`       | Carta más alta    | `'J'`           | Carta más alta                                |
+| `Hand.ONE_PAIR`        | Pareja            | `'5'`           | Carta más alta                                |
+| `Hand.TWO_PAIR`        | Dobles parejas    | `('10', '7')`   | Tupla con cartas más altas (de mayor a menor) |
+| `Hand.THREE_OF_A_KIND` | Trío              | `'K'`           | Carta más alta                                |
+| `Hand.STRAIGHT`        | Escalera          | `'9'`           | Carta más alta                                |
+| `Hand.FLUSH`           | Color             | `'Q'`           | Carta más alta                                |
+| `Hand.FULL_HOUSE`      | Pareja + Trío     | `('3', 'J')`    | Tupla con carta del trío y carta de la pareja |
+| `Hand.FOUR_OF_A_KIND`  | Poker             | `'Q'`           | Carta más alta                                |
+| `Hand.STRAIGHT_FLUSH`  | Escalera de color | `'7'`           | Carta más alta                                |
+
+> ⚠️ Aclaraciones de la escalera: Si hay un AS en la escalera, la única posibilidad es que sea la carta más alta en la escalera `A-K-Q-J-10`.
 
 ### Deck 🗃️
 
