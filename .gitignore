@@ -5,10 +5,8 @@
 htmlcov
 .coverage
 ut0/chat_done.dat
-solution/
 ut*/pop*/*
 ut*/te*/*
-poker.afdesign
 # Para resetear borrar de aquí para abajo
 !ut1/pop0/*.md
 !ut1/pop1/*.md
@@ -21,3 +19,7 @@ poker.afdesign
 !ut4/te2/*.md
 !ut4/te2/test*.py
 !ut4/te2/images
+!ut4/te2/solution/
+ut4/te2/solution/*
+!ut4/te2/solution/helpers.py
+!ut4/te2/solution/test_poker.py
