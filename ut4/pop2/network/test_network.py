@@ -146,6 +146,7 @@ def test_build_base_ip_adress_error():
     assert str(err) == ERR_BASE_MSG
 
 
+@pytest.mark.skip(reason='El profe se equivocó y te dio ya el código hecho')
 def test_network_iterator(host1: Host):
     niter = iter(host1)
     for ip_seg in range(1, 255):
@@ -154,3 +155,13 @@ def test_network_iterator(host1: Host):
         assert host.ip == ip
     with pytest.raises(StopIteration):
         next(niter)
+
+
+def test_add_hosts(host1: Host, host2: Host, host3: Host):
+    result = host1 + host2
+    assert result.ip_octets == (255, 184, 2, 10)
+    assert result.mask == 32
+
+    result = host2 + host3
+    assert result.ip_octets == (182, 16, 2, 10)
+    assert result.mask == 24
