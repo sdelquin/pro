@@ -23,3 +23,14 @@ ut*/te*/*
 ut4/te2/solution/*
 !ut4/te2/solution/helpers.py
 !ut4/te2/solution/test_poker.py
+!ut4/pop2/*.md
+!ut4/pop2/filesystem/
+ut4/pop2/filesystem/*
+!ut4/pop2/filesystem/*.md
+!ut4/pop2/filesystem/templates
+!ut4/pop2/filesystem/test_filesystem.py
+!ut4/pop2/network/
+ut4/pop2/network/*
+!ut4/pop2/network/*.md
+!ut4/pop2/network/templates
+!ut4/pop2/network/test_network.py
