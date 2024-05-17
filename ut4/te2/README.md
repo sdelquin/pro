@@ -92,13 +92,38 @@ Se debe poder construir un objeto `Card` desde una cadena de texto. **Ejemplos**
 
 > ⚠️ Aclaraciones de la escalera: Si hay un AS en la escalera, la única posibilidad es que sea la carta más alta en la escalera `A-K-Q-J-10`.
 
+#### EMPATES
+
+Para que se produzca un empate la mejor mano de cada jugador debe "valer" exactamente lo mismo.
+
+Veamos el siguiente ejemplo donde **no hay empate**:
+
+- Jugador 1: `Q◆` `5❤`
+- Jugador 2: `J♣` `5♣`
+- Cartas comunes: `A♠` `7❤` `7♠` `4♠` `2♠`
+
+→ La mejor mano del Jugador 1 es **doble pareja**: `7❤` `7♠` `A♠` `Q◆` `5❤`  
+→ La mejor mano del Jugador 2 es **doble pareja**: `7❤` `7♠` `A♠` `J♣` `5♣`
+
+**Gana el Jugador 1** porque, si bien ambos jugadores tienen pareja de 7, el Jugador 1 tiene **mejores cartas** (globales) que el Jugador 2.
+
+---
+
+Veamos el siguiente ejemplo donde **sí hay empate**:
+
+- Jugador 1: `K♣` `J♣`
+- Jugador 2: `J◆` `8❤`
+- Cartas comunes: `A♣` `J❤` `9♠` `9❤` `8◆`
+
+La mejor mano de ambos jugadores es **dobles parejas** (y AS): `J♣` `J❤` `9♠` `9❤` `A♣`
+
 ### Deck 🗃️
+
+> 💡 Esto es totalmente OPCIONAL
 
 | Datos     | Responsabilidades     |
 | --------- | --------------------- |
 | 52 cartas | Dar cartas aleatorias |
-
-> 💡 OPCIONAL
 
 ## Módulo helpers
 
