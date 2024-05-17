@@ -1,3 +1,6 @@
+from __future__ import annotations
+
+
 class FileSystem:
     """Simulación de un sistema PLANO de ficheros tipo UNIX/Linux...
     PLANO significa que sólo se admite un nivel de directorios.
@@ -22,6 +25,11 @@ class FileSystem:
         ├── data.txt
         ├── dmes.log
         └── info.log
+
+    Excepciones
+    ===========
+    Todas las excepciones que se deben lanzar son de tipo FileSystemError
+    cuya implementación está al final del fichero.
     """
 
     # Formatos admitidos de sistemas de ficheros

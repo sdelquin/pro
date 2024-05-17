@@ -1,9 +1,15 @@
 from __future__ import annotations
 
-"""Manipulación de IPs en hosts sobre redes de ordenadores"""
-
 
 class Host:
+    """Manipulación de IPs en hosts sobre redes de ordenadores.
+
+    Excepciones
+    ===========
+    Todas las excepciones que se deben lanzar son de tipo IPAddressError
+    cuya implementación está al final del fichero.
+    """
+
     IPV4_BITS = 32
     # ↓ Contiene: [0, 8, 16, 24, 32]
     IPV4_SLICES = list(range(0, IPV4_BITS + 1, 8))
