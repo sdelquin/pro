@@ -119,10 +119,7 @@ class Host:
             ...
             192.168.1.254/25
         Se debe hacer uso del método from_bip() definido anteriormente."""
-        for i in range(1, self.num_hosts + 1):
-            addr_bhost = f'{i:0{self.addr_host_size}b}'
-            bip = self.addr_bmask + addr_bhost
-            yield Host.from_bip(bip, self.mask)
+        pass
 
 
 class IPAddressError(Exception):
