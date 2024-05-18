@@ -19,11 +19,10 @@ class Host:
         Constructor de un Host
         ======================
         - Si el primer argumento de args es un string, se supondrá que es una IP en formato
-          de cadena de texto. Ejemplo: '192.168.1.5'
-        - Si args es una tupla indica que vienen una serie de octetos de la dirección. Se
-          rellenarán los octetos faltantes (si es que faltan) con ceros.
-            + Ejemplo completo: (192, 168, 1, 5)
-            + Ejemplo incompleto: (192, 168) habrá que rellenar → (192, 168, 0, 0)
+          de cadena de texto.
+          + Ejemplo: '192.168.1.5'
+        - Si args es una tupla indica que vienen una serie de octetos de la dirección.
+          + Ejemplo: (192, 168, 1, 5)
         - Si la máscara está fuera de rango habrá que elevar una excepción de dirección IP
           indicando en el mensaje: "Mask is out of range". Ejemplo: mask=33
         - Si nos pasan un número de octetos distinto de 4, habrá que elevar una excepción de
@@ -80,8 +79,9 @@ class Host:
     @property
     def nclass(self) -> str:
         """Devuelve la clase de la red: A, B o C.
+        (no es necesario contemplar clases D y E)
         → Ver https://bit.ly/42Pgm2k
-        Haz uso de IPV4_SLICES definido anteriormente."""
+        Puedes hacer IPV4_SLICES definido anteriormente."""
         pass
 
     @property
@@ -125,10 +125,7 @@ class Host:
             ...
             192.168.1.254/25
         Se debe hacer uso del método from_bip() definido anteriormente."""
-        for i in range(1, self.num_hosts + 1):
-            addr_bhost = f'{i:0{self.addr_host_size}b}'
-            bip = self.addr_bmask + addr_bhost
-            yield Host.from_bip(bip, self.mask)
+        pass
 
     def __add__(self, other: Host) -> Host:
         """Suma dos objetos de tipo Host.

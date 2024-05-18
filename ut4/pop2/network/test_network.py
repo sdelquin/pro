@@ -19,25 +19,18 @@ def host3():
     return Host(10, 0, 1, 5, mask=8)
 
 
-def test_build_host_by_full_str_ip():
+def test_build_host_by_str_ip():
     host = Host('192.168.1.5', mask=24)
     assert isinstance(host, Host)
     assert host.mask == 24
     assert host.ip_octets == (192, 168, 1, 5)
 
 
-def test_build_host_by_full_tuple_ip():
+def test_build_host_by_tuple_ip():
     host = Host(192, 168, 1, 5, mask=24)
     assert isinstance(host, Host)
     assert host.mask == 24
     assert host.ip_octets == (192, 168, 1, 5)
-
-
-def test_build_host_by_partial_tuple_ip():
-    host = Host(192, 168, mask=16)
-    assert isinstance(host, Host)
-    assert host.mask == 16
-    assert host.ip_octets == (192, 168, 0, 0)
 
 
 def test_build_host_fails_when_mask_is_out_of_range():
@@ -146,7 +139,6 @@ def test_build_base_ip_adress_error():
     assert str(err) == ERR_BASE_MSG
 
 
-@pytest.mark.skip(reason='El profe se equivocó y te dio ya el código hecho')
 def test_network_iterator(host1: Host):
     niter = iter(host1)
     for ip_seg in range(1, 255):

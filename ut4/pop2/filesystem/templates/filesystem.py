@@ -8,19 +8,19 @@ class FileSystem:
     Ejemplo:
     .
     ├── /
-    │   ├── kernel.asm
-    │   └── grub.sys
+    │   ├── kernel.asm
+    │   └── grub.sys
     ├── /etc
-    │   ├── fstab.conf
-    │   └── systemd.xml
+    │   ├── fstab.conf
+    │   └── systemd.xml
     ├── /home
-    │   ├── george.dat
-    │   ├── john.dat
-    │   ├── paul.dat
-    │   └── ringo.dat
+    │   ├── george.dat
+    │   ├── john.dat
+    │   ├── paul.dat
+    │   └── ringo.dat
     ├── /usr
-    │   ├── register.db
-    │   └── web.py
+    │   ├── register.db
+    │   └── web.py
     └── /var
         ├── data.txt
         ├── dmes.log
@@ -41,8 +41,8 @@ class FileSystem:
         ============================
         - Habrá que crear los atributos "root" (diccionario), "cwd" (str) y "format" (str):
           → root es un diccionario que almacenará el contenido del sistema de ficheros:
-            * Las claves son directorios.
-            * Los valores son ficheros dentro de los directorios.
+            * Cada clave es un directorio.
+            * Cada valor es una LISTA con los ficheros dentro del directorio.
             (En un sistema "plano" → No puede haber directorios dentro de directorios)
           → cwd indica el "current work directory" o directorio actual de trabajo.
           → format indica el formato del sistema de ficheros.
@@ -66,7 +66,7 @@ class FileSystem:
 
     @staticmethod
     def directory_required(method):
-        """Este decorador comprueba si el primer argumento POSICIONAL del método decorado
+        """Este decorador comprueba si el PRIMER ARGUMENTO POSICIONAL del método decorado
         es un directorio:
         - En caso afirmativo ejecuta el método.
         - En otro caso lanza una excepción con el mensaje: 'Given path is not a directory'
@@ -76,7 +76,7 @@ class FileSystem:
 
     @staticmethod
     def file_required(method):
-        """Este decorador comprueba si el primer argumento POSICIONAL del método decorado
+        """Este decorador comprueba si el PRIMER ARGUMENTO POSICIONAL del método decorado
         es un fichero:
         - En caso afirmativo ejecuta el método.
         - En otro caso lanza una excepción con el mensaje: 'Given path is not a file'
@@ -90,14 +90,14 @@ class FileSystem:
 
     @directory_required
     def mkdir(self, path: str) -> None:
-        """Crea un nuevo directorio en el sistema de ficheros.
+        """Crea un nuevo directorio VACÍO en el sistema de ficheros.
         Si el directorio ya existe se debe lanzar una excepción con el mensaje:
         Directory already exists"""
         pass
 
     @directory_required
     def cd(self, path) -> None:
-        """Cambia el directorio actual al "path" indicado.
+        """Cambia el directorio actual de trabajo al "path" indicado.
         Si el directorio no existe debe lanzar una excepción con el mensaje:
         Directory does not exist"""
         pass
@@ -126,12 +126,12 @@ class FileSystem:
         """Toca (o crea) un fichero (vacío) en la ruta "path".
         Si el directorio no existe debe lanzar una excepción con el mensaje:
         Directory does not exist
-        Se debe hacer uso de la función split_filepath() definida anteriormente."""
+        Se recomienda usar la función split_filepath() definida anteriormente."""
         pass
 
     def __len__(self):
         """Calcula la longitud del sistema de ficheros.
-        Esta longitud será el número de ficheros que hay en el sistema de ficheros."""
+        Esta longitud será el número total de FICHEROS que hay en el sistema de ficheros."""
         pass
 
     def __str__(self):
@@ -147,13 +147,13 @@ class FileSystem:
 
     @property
     def files(self) -> list[str]:
-        """Devuelve los ficheros del directorio actual de trabajo ordenados alfabéticamente."""
+        """Devuelve los ficheros del DIRECTORIO ACTUAL DE TRABAJO ordenados alfabéticamente."""
         pass
 
     def __iter__(self):
         """Iterador del sistema de ficheros COMO FUNCIÓN GENERADORA.
         Debe devolver todos los ficheros del sistema de ficheros (SOLO FICHEROS).
-        Se debe hacer uso de los métodos dirs() y files() definidos previamente."""
+        Se recomienda usar los métodos dirs() y files() definidos previamente."""
         pass
 
 
