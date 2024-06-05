@@ -15,7 +15,6 @@ Propuesta de módulos y clases por módulo:
 ```
 ├── test_poker.py
 ├── game.py
-│   └── Game
 ├── cards.py
 │   ├── Card
 │   ├── Deck
@@ -27,7 +26,7 @@ Propuesta de módulos y clases por módulo:
 
 ### Game 🎲
 
-Debe disponer de la siguiente función:
+El módulo `game.py` debe disponer de la siguiente función:
 
 ```python
 def get_winner(
