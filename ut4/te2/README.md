@@ -13,7 +13,8 @@ Simular el comportamiento de una **partida de cartas de poker** modalidad **Texa
 Propuesta de módulos y clases por módulo:
 
 ```
-├── test_poker.py
+├── test_poker.py  # dado
+├── helpers.py     # dado
 ├── game.py
 ├── cards.py
 │   ├── Card
@@ -24,7 +25,7 @@ Propuesta de módulos y clases por módulo:
     └── Player
 ```
 
-### Game 🎲
+### game 🎲
 
 El módulo `game.py` debe disponer de la siguiente función:
 
@@ -126,7 +127,7 @@ La mejor mano de ambos jugadores es **dobles parejas** (y AS): `J♣` `J❤` `9�
 
 ## Módulo helpers
 
-El fichero [helpers.py](./solution/helpers.py) contiene funciones de apoyo al desarrollo del proyecto.
+El fichero (módulo) [helpers.py](./solution/helpers.py) contiene funciones de apoyo al desarrollo del proyecto.
 
 La más importante es: `combinations(values, n)` que genera todas las combinaciones posibles de `values` con tamaño `n`:
 
@@ -146,12 +147,13 @@ La más importante es: `combinations(values, n)` que genera todas las combinacio
 
 Dos apuntes importantes:
 
-- Lo que le pasamos es un **iterable** con lo que se podría usar una lista de objetos `Card`.
+- Lo que le pasamos es un **iterable** con lo que se podría usar una lista de objetos de tipo `Card`.
 - El parámetro `n` debe pasarse por nombre.
 
 ## Comprobación
 
 - Puedes descargar aquí el [fichero de tests](./solution/test_poker.py) para pytest.
+- El fichero de tests NO SE PUEDE MODIFICAR.
 - La calificación de la tarea estará en función del número de tests superados y de la calidad del código escrito.
 
 ## Referencias
