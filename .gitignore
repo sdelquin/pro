@@ -34,3 +34,14 @@ ut4/pop2/network/*
 !ut4/pop2/network/*.md
 !ut4/pop2/network/templates
 !ut4/pop2/network/test_network.py
+!ut5/pop1/*.md
+!ut5/pop1/mail/
+ut5/pop1/mail/*
+!ut5/pop1/mail/*.md
+!ut5/pop1/mail/templates/
+!ut5/pop1/mail/test_mail.py
+!ut5/pop1/sms/
+ut5/pop1/sms/*
+!ut5/pop1/sms/*.md
+!ut5/pop1/sms/templates/
+!ut5/pop1/sms/test_sms.py
