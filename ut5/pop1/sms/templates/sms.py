@@ -99,7 +99,7 @@ class SIM(DbHandler):
 
         Si "recipient" no tiene un formato válido de número de teléfono se debe
         lanzar una excepción de tipo SIMError con el mensaje:
-        Recipient "<recipient>" has invalid format!
+        Recipient "<recipient>" has invalid phone format!
 
         Un número de teléfono válido es aquel que empieza por 6 o 7 y contiene
         un total de 9 dígitos. Ojo porque también puede aparecer un prefijo
