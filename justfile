@@ -27,3 +27,7 @@ reset:
 
     echo
     echo ⚠ ¡Ojo! Quitar las líneas correspondientes de .gitignore
+
+[no-cd]
+coverage:
+    pytest --cov --cov-report=html
