@@ -40,10 +40,10 @@ class User:
         pass
 
     def update(self) -> None:
-        """Actualiza todos los campos del objeto en la base de datos usando
-        el identificador como referencia.
-        Si el objeto aún no se ha guardado en la base de datos, lanza una excepción de tipo
-        ValueError con el mensaje: User "<username>" has not been yet saved into DB!"""
+        """Si el objeto aún no se ha guardado en la base de datos, lanza una excepción de tipo
+        ValueError con el mensaje: User "<username>" has not been yet saved into DB!
+        Si todo ha ido bien, actualiza todos los campos del objeto en la base de datos usando
+        el identificador como referencia."""
         pass
 
     def __str__(self):
@@ -80,10 +80,10 @@ class Product:
         pass
 
     def update(self) -> None:
-        """Actualiza todos los campos del objeto en la base de datos usando
-        el identificador como referencia.
-        Si el objeto aún no se ha guardado en la base de datos, lanza una excepción de tipo
-        ValueError con el mensaje: Product "<nombre-producto>" has not been yet saved into DB!"""
+        """Si el objeto aún no se ha guardado en la base de datos, lanza una excepción de tipo
+        ValueError con el mensaje: Product "<nombre-producto>" has not been yet saved into DB!
+        Si todo ha ido bien, actualiza todos los campos del objeto en la base de datos usando
+        el identificador como referencia."""
         pass
 
     def sell(self, qty: int) -> None:
