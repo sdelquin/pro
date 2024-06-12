@@ -45,3 +45,9 @@ ut5/pop1/sms/*
 !ut5/pop1/sms/*.md
 !ut5/pop1/sms/templates/
 !ut5/pop1/sms/test_sms.py
+!ut5/pop2/*.md
+!ut5/pop2/*.svg
+!ut5/pop2/templates/
+ut5/pop2/templates/*
+!ut5/pop2/templates/ecommerce.py
+!ut5/pop2/test_ecommerce.py
