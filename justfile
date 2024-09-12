@@ -1,9 +1,8 @@
+# https://github.com/maaslalani/slides
+# CTRL-E para ejecutar el trozo de código
 intro:
-    slides ut0/intro.md
-
-chat:
-    truncate -s 0 ut0/chat_done.dat
-    cd ut0 && slides chat.md
+    truncate -s 0 ut0/intro_done.dat
+    cd ut0 && slides intro.md
 
 reset:
     #!/bin/bash

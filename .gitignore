@@ -4,7 +4,7 @@
 *.pyc
 htmlcov
 .coverage
-ut0/chat_done.dat
+ut0/intro_done.dat
 ut*/pop*/*
 ut*/te*/*
 # Para resetear borrar de aquí para abajo
