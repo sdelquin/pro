@@ -1,4 +1,4 @@
-# Cómo trabajar en casa
+# Cómo trabajar en casa 🏠
 
 Hay dos enfoques para trabajar en casa:
 
@@ -19,7 +19,7 @@ Esta sección presupone que dispones en casa de un sistema operativo **Windows**
 
 1. [Instalar Python](https://github.com/sdelquin/edubase/blob/main/docs/python-install-win.md)
 2. [Instalar git](https://github.com/sdelquin/edubase/blob/main/docs/git-install-win.md)
-3. [Instalar pycheck](https://pycheck.es/docs/#instalacion)
+3. [Instalar pypas](https://pypas.es/#instalaci%C3%B3n)
 4. [Instalar VSCode](https://github.com/sdelquin/edubase/blob/main/docs/vscode-install-win.md)
 5. [Configurar VSCode para Python](https://github.com/sdelquin/edubase/blob/main/docs/vscode-python-win.md)
 
