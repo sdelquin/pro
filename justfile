@@ -5,6 +5,7 @@
     cd ut0 && slides intro.md
 
 # Resetear el repositorio (principio de curso)
+# https://stackoverflow.com/a/26000395
 [confirm('Borrar todo el historial de git? [y/n]')]
 reset:
     #!/usr/bin/env bash
