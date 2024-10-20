@@ -1,0 +1,11 @@
+.python-version
+.artwork
+.DS_Store
+*.pyc
+htmlcov
+.coverage
+ut0/intro_done.dat
+ut*/pop*/*
+ut*/te*/*
+# Para resetear borrar de aquí para abajo
+!ut2/pop2.0/*.md
