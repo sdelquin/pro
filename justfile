@@ -14,7 +14,7 @@ reset:
     git commit -am "New school year"
     git branch -D main
     git branch -m main
-    git push -f origin main
+    git push --set-upstream -f origin main
 
     echo
     echo ⚠ ¡Ojo! Quitar las líneas correspondientes de .gitignore
