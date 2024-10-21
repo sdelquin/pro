@@ -32,7 +32,7 @@ code .
 - Crea un fichero `.zip` con todos los ejercicios de la prueba ejecutando el siguiente comando:
 
 ```console
-cd ~/pro/ut2/pop2.0 && zip -r pop2.0.zip .
+cd ~/pro/ut2/pop2.0 && zip -r pop2.0.zip . -x '*.mypy_cache*' -x '*.pytest_cache*' -x '*__pycache__*'
 ```
 
 - Abre un navegador **en la máquina virtual** y accede a la entrega de la actividad **en el aula virtual de Programación**.
