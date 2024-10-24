@@ -12,8 +12,8 @@
 
 |                 | Puesto PAR     | Puesto IMPAR |
 | --------------- | -------------- | ------------ |
-| **Ejercicio 1** | `simple_f`     | `simple_g`   |
-| **Ejercicio 2** | `bin_ones`     | `clean_bin`  |
-| **Ejercicio 3** | `vowel_offset` | `upsurname`  |
-| **Ejercicio 4** | `hex2rgb`      | `rgb_decomp` |
-| **Ejercicio 5** | `simple_slug`  | `vowelsrep`  |
+| **Ejercicio 1** | `simple-f`     | `simple-g`   |
+| **Ejercicio 2** | `bin-ones`     | `clean-bin`  |
+| **Ejercicio 3** | `vowel-offset` | `upsurname`  |
+| **Ejercicio 4** | `hex2rgb`      | `rgb-decomp` |
+| **Ejercicio 5** | `simple-slug`  | `vowelsrep`  |
