@@ -1,4 +1,4 @@
-# UT1-POP1: Tipos de datos
+# POP2.1: Tipos de datos
 
 ### PRUEBA OBJETIVA PRÁCTICA
 
