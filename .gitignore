@@ -10,3 +10,4 @@ ut*/te*/*
 # Para resetear borrar de aquí para abajo
 !ut2/pop2.0/*.md
 !ut2/pop2.1/*.md
+!ut3/tep3.1/*.md
