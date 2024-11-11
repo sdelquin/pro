@@ -22,9 +22,10 @@ code .
 
 ## Durante la prueba
 
-- Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
 - Puedes mostrar la descripción del ejercicio con `pypas doc`
 - Puedes comprobar tu ejercicio contra los casos de prueba con `pypas test`
+- Utiliza únicamente recursos que hayamos visto en clase hasta el momento.
+- Sólo está permitido consultar [aprendepython.es](https://aprendepython.es) y los ejercicios que hayas hecho durante el curso.
 
 ## Al finalizar
 
