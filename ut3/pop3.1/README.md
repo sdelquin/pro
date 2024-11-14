@@ -13,6 +13,6 @@
 |                 | Puesto PAR       | Puesto IMPAR  |
 | --------------- | ---------------- | ------------- |
 | **Ejercicio 1** | `letdig`         | `divisors`    |
-| **Ejercicio 2** | `traffic_lights` | `trimmed_mul` |
+| **Ejercicio 2** | `traffic-lights` | `trimmed-mul` |
 | **Ejercicio 3** | `adn2arn`        | `lstrip`      |
-| **Ejercicio 4** | `rolling_age`    | `banagram`    |
+| **Ejercicio 4** | `rolling-age`    | `banagram`    |
