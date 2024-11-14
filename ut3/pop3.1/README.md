@@ -12,7 +12,7 @@
 
 |                 | Puesto PAR       | Puesto IMPAR  |
 | --------------- | ---------------- | ------------- |
-| **Ejercicio 1** | `letdig`         | `divisors`    |
+| **Ejercicio 1** | `count-words`    | `divisors`    |
 | **Ejercicio 2** | `traffic-lights` | `trimmed-mul` |
 | **Ejercicio 3** | `adn2arn`        | `lstrip`      |
 | **Ejercicio 4** | `rolling-age`    | `banagram`    |
