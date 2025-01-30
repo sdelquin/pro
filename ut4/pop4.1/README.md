@@ -1,4 +1,4 @@
-# POP4.1: Estructuras de datos (Listas y Tuplas)
+# POP4.1: Estructuras de datos I
 
 ### PRUEBA OBJETIVA PRÁCTICA
 
