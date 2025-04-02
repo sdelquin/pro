@@ -29,7 +29,6 @@ code .
 
 ## Al finalizar
 
-- Sube cada ejercicio con `pypas put`
 - Crea un fichero `.zip` con todos los ejercicios de la prueba ejecutando el siguiente comando:
 
 ```console
