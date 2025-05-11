@@ -26,9 +26,6 @@ reset:
     git branch -m main
     git push --set-upstream -f origin main
 
-    echo
-    echo ⚠ ¡Ojo! Quitar las líneas correspondientes de .gitignore
-
 [no-cd]
 coverage:
     pytest --cov --cov-report=html
