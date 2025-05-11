@@ -26,10 +26,6 @@ reset:
     git branch -m main
     git push --set-upstream -f origin main
 
-[no-cd]
-coverage:
-    pytest --cov --cov-report=html
-
 # Renderizar (y expandir) el howto para todas las POP
 expand-howto:
-    python management/howto.py
+    uv run python management/howto.py
