@@ -1,0 +1,27 @@
+.python-version
+.artwork
+.DS_Store
+*.pyc
+htmlcov
+.coverage
+final-de-curso.md
+ut0/intro_done.dat
+ut*/pop*/*
+ut*/te*/*
+# Para resetear comentar de aquí para abajo
+# !ut2/pop2.0/*.md
+# !ut2/pop2.1/*.md
+# !ut3/tee3.1/*.md
+# !ut3/tep3.1/*.md
+# !ut3/pop3.0/*.md
+# !ut3/pop3.1/*.md
+# !ut4/pop4.1/*.md
+# !ut5/pop5.1/*.md
+# !ut6/tee6.1/*.md
+# !ut6/tep6.1/*.md
+# !ut6/pop6.1/*.md
+# !ut7/tep7.1/*.md
+# !ut7/pop7.1/*.md
+# !ut8/tee8.1/*.md
+# !ut8/pop8.1/*.md
+# !ut8/pop8.2/*.md
