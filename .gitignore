@@ -2,6 +2,7 @@
 .artwork
 .DS_Store
 *.pyc
+node_modules
 htmlcov
 .coverage
 final-de-curso.md
