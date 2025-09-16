@@ -4,10 +4,27 @@ date: "DD/MM/YYYY"
 paging: "%d/%d"
 ---
 
+```
+ ____   ____    ___
+|  _ \ |  _ \  / _ \
+| |_) || |_) || | | |
+|  __/ |  _ < | |_| |
+|_|    |_| \_\ \___/
+
+ _  ____      _    __        __
+/ ||  _ \    / \   \ \      / /
+| || | | |  / _ \   \ \ /\ / /
+| || |_| | / ___ \   \ V  V /
+|_||____/ /_/   \_\   \_/\_/
+```
+
+---
+
 # Algo sobre mi 👨‍💻
 
 - Sergio Delgado Quintero.
 - Estudié **Ingeniería Informática** en la _Universidad de La Laguna_.
+- Catedrático de Enseñanza Secundaria especialidad en Informática.
 - Casi 20 años programando (y enseñando) Python.
 - Cofundador de https://pythoncanarias.es
 - Muchos proyectos desarrollados 🏃‍♂️
@@ -115,6 +132,9 @@ Por curso...
 
 - Cuaderno 📔
 - Bolígrafo ✍️
+
+**Material recomendado:**
+
 - Disco duro externo USB 💾
 
 ---
@@ -144,13 +164,29 @@ Por curso...
 
 ---
 
+# IA
+
+**IA** significa Inteligencia Artificial...
+
+```<!-- uvx art text IA swapland   https://github.com/sepandhaghighi/art -->
+ ________      ________
+/_______/\    /_______/\
+\__.::._\/    \::: _  \ \
+   \::\ \      \::(_)  \ \
+   _\::\ \__    \:: __  \ \
+  /__\::\__/\    \:.\ \  \ \
+  \________\/     \__\/\__\/
+```
+
+---
+
 # Algo sobre ti 👋
 
-1. ¿En qué te has formado hasta ahora?
-2. ¿Por qué quieres estudiar DAW?
-3. ¿Cuál es tu hobby?
-4. ¿Cuál es tu artista/grupo favorito de música?
-5. ¿Cómo quieres que te llamen?
+1. ¿Cómo te llamas? ¿Cómo quieres que te llamen?
+2. ¿En qué te has formado hasta ahora?
+3. ¿Por qué quieres estudiar DAW?
+4. ¿Cuál es tu hobby?
+5. ¿Cuál es tu artista/grupo favorito de música?
 
 ---
 
