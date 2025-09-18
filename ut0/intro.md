@@ -99,14 +99,14 @@ Por curso...
 
 # Unidades de trabajo
 
-- **UT1**: Introducción a la programación.
-- **UT2**: Tipos de datos.
-- **UT3**: Control de flujo.
-- **UT4**: Estructuras de datos I.
-- **UT5**: Estructuras de datos II.
-- **UT6**: Funciones.
-- **UT7**: Programación orientada a objetos.
-- **UT8**: Librerías.
+- **UT1**: Introducción a la programación (T1)
+- **UT2**: Tipos de datos (T1)
+- **UT3**: Control de flujo (T1)
+- **UT4**: Estructuras de datos I (T2)
+- **UT5**: Estructuras de datos II (T2)
+- **UT6**: Funciones (T2)
+- **UT7**: Programación orientada a objetos (T3)
+- **UT8**: Librerías (T3)
 
 ---
 
@@ -123,6 +123,21 @@ Por curso...
 | RA7 |     |     |     |     |      |     | 100% |      |
 | RA8 |     |     |     |     |      |     |      | 100% |
 | RA9 |     |     |     |     |      |     |      | 100% |
+
+---
+
+# Entregables
+
+| UT  | POT | POP | TEE | TEP |
+| --- | --- | --- | --- | --- |
+| UT1 | ✅  |     |     |     |
+| UT2 | ✅  | ✅  |     |     |
+| UT3 | ✅  | ✅  | ✅  | ✅  |
+| UT4 | ✅  | ✅  |     |     |
+| UT5 | ✅  | ✅  |     |     |
+| UT6 | ✅  | ✅  | ✅  | ✅  |
+| UT7 | ✅  | ✅  |     | ✅  |
+| UT8 | ✅  | ✅  | ✅  |     |
 
 ---
 
