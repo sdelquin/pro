@@ -65,3 +65,13 @@ $ rm test.txt
 ```
 
 > 💡 `rm -r` permite borrar una carpeta. ⚠️ ¡Cuidado con esto porque puede ser peligroso!
+
+### `cat`
+
+Permite visualizar el contenido de un fichero:
+
+```console
+$ cat test.txt
+```
+
+> 💡 `bat` es un "cat mejorado" aunque puede que sólo lo tengas disponible en algunos sistemas.
