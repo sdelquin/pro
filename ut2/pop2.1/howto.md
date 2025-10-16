@@ -5,7 +5,7 @@
 - Trabaja en la carpeta adecuada:
 
 ```console
-mkdir -p ~/pro/{{ ut }}/{{ pop }} && cd ~/pro/{{ ut }}/{{ pop }}
+mkdir -p ~/pro/ut2/pop2.1 && cd ~/pro/ut2/pop2.1
 ```
 
 - Mira los ejercicios del examen y crea las plantillas:
@@ -32,11 +32,11 @@ code .
 - Crea un fichero `.zip` con todos los ejercicios de la prueba ejecutando el siguiente comando:
 
 ```console
-cd ~/pro/{{ ut }}/{{ pop }} && zip -FSr {{ pop }}.zip . -x '*.mypy_cache*' -x '*.pytest_cache*' -x '*__pycache__*'
+cd ~/pro/ut2/pop2.1 && zip -FSr pop2.1.zip . -x '*.mypy_cache*' -x '*.pytest_cache*' -x '*__pycache__*'
 ```
 
 - Abre un navegador **en la máquina virtual** y accede a la entrega de la actividad **en el aula virtual de Programación**.
-- Sube únicamente el fichero comprimido `{{ pop }}.zip`
+- Sube únicamente el fichero comprimido `pop2.1.zip`
 
 ## Evaluación
 
