@@ -6,7 +6,9 @@ node_modules
 htmlcov
 .coverage
 final-de-curso.md
-ut0/intro_done.dat
+ut0/intro/*
+!ut0/intro/slides.tex
+!ut0/intro/slides.pdf
 ut*/pop*/*
 ut*/te*/*
 # Para resetear comentar de aquí para abajo

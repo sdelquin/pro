@@ -1,0 +1,262 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{pifont}
+\usepackage{hyperref}
+
+\setbeamertemplate{navigation symbols}{}
+
+\usetheme{Berlin}
+\usefonttheme{professionalfonts}
+
+\title{Programación}
+\subtitle{Desarrollo de Aplicaciones Web}
+\author{Sergio Delgado Quintero}
+\institute{IES Puerto de la Cruz - Telesforo Bravo}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Tabla de Contenidos}
+    \tableofcontents
+\end{frame}
+
+\section{El profe}
+\begin{frame}{Algo sobre mi}
+    \begin{itemize}
+        \item Sergio Delgado Quintero.
+        \item Estudié \textbf{Ingeniería Informática} en la \textit{Universidad de La Laguna}.
+        \item Catedrático de Enseñanza Secundaria especialidad en Informática.
+        \item Casi 20 años programando (y enseñando) \textbf{Python}.
+        \item Cofundador de \href{https://pythoncanarias.es}{Python Canarias}.
+        \item Muchos proyectos desarrollados.
+        \item Contacto: \texttt{sdelqui@gobiernodecanarias.org}
+    \end{itemize}
+\end{frame}
+
+\section{El módulo}
+\begin{frame}{Módulo: Programación}
+    \begin{itemize}
+        \item Primer curso del CFGS Desarrollo de Aplicaciones Web.
+        \item 6 horas semanales.
+        \item Lenguaje de programación: \textbf{Python}.
+        \item Aula virtual CAMPUS: \href{https://peq.es/pro}{peq.es/pro}
+        \item Contenidos: \href{https://peq.es/python}{peq.es/python}
+        \item Máquina virtual: \textbf{VirtualBox}.
+    \end{itemize}
+\end{frame}
+
+\section{Sistema de evaluación}
+\begin{frame}{Instrumentos de evaluación}
+    \begin{itemize}
+        \item Pruebas objetivas [PO] (\textbf{60\%})
+        \begin{itemize}
+            \item Pruebas objetivas teóricas [POT] (\textbf{25\%})
+            \item Pruebas objetivas prácticas [POP] (\textbf{75\%})\footnote{Es necesario superar para realizar media.}
+        \end{itemize}
+        \item Tareas evaluables [TE] (\textbf{40\%})
+        \begin{itemize}
+            \item Tareas evaluables: Ejercicios [TEE] (\textbf{50\%})
+            \item Tareas evaluables: Proyectos [TEP] (\textbf{50\%})\footnote{Se realizará por grupos.}
+        \end{itemize}
+    \end{itemize}
+
+    \begin{block}{\tiny{Cálculo de la nota}}
+        \vspace{-1.5em}
+        \begin{align*}
+        N_{ev} =\ & 0.60 * (0.25 * POT + 0.75 * POP) +\\
+                & 0.40 * (0.5 * TEE + 0.5 * TEP)
+        \end{align*}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Criterios de calificación}
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        & 1ª Evaluación & 2ª Evaluación & 3ª Evaluación\\
+        \hline
+        1ª Evaluación & 100\% & - & -\\
+        \hline
+        2ª Evaluación & 30\%  & 70\% & -\\
+        \hline
+        3ª Evaluación & 20\%  & 20\% & 60\%\\
+        \hline
+    \end{tabular}\\[1em]
+
+    \begin{block}{\tiny{Cálculo de la nota}}
+        \vspace{-1.5em}
+        \begin{align*}
+            N_1 &= N_{ev}\\
+            N_2 &= 0.3 * N_1 + 0.7 * N_{ev}\\
+            N_3 &= 0.2 * N_1 + 0.2 * N_2 + 0.6 * N_{ev}
+        \end{align*}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje}
+    \framesubtitle{$[RA1-RA5]$}
+    \begin{itemize}
+        \item \textbf{RA1}: Reconoce la estructura de un programa informático, identificando y relacionando los elementos propios del lenguaje de programación utilizado.
+        \item \textbf{RA2}: Escribe y prueba programas sencillos, reconociendo y aplicando los fundamentos de la programación orientada a objetos.
+        \item \textbf{RA3}: Escribe y depura código, analizando y utilizando las estructuras de control del lenguaje.
+        \item \textbf{RA4}: Desarrolla programas organizados en clases analizando y aplicando los principios de la programación orientada a objetos.
+        \item \textbf{RA5}: Realiza operaciones de entrada y salida de información, utilizando procedimientos específicos del lenguaje y librerías de clases.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje}
+    \framesubtitle{$[RA6-RA9]$}
+    \begin{itemize}
+        \item \textbf{RA6}: Escribe programas que manipulen información seleccionando y utilizando tipos avanzados de datos.
+        \item \textbf{RA7}: Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.
+        \item \textbf{RA8}: Utiliza bases de datos orientadas a objetos, analizando sus características y aplicando técnicas para mantener la persistencia de la información.
+        \item \textbf{RA9}: Gestiona información almacenada en bases de datos manteniendo la integridad y consistencia de los datos.
+    \end{itemize}
+\end{frame}
+
+\section{Unidades de trabajo}
+
+\begin{frame}{Secuenciación}
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Unidad} & \textbf{Nombre} & \textbf{Trimestre}\\
+        \hline
+        UT1 & Introducción a la programación & \textcolor{purple}{T1}\\
+        \hline
+        UT2 & Tipos de datos & \textcolor{purple}{T1}\\
+        \hline
+        UT3 & Control de flujo & \textcolor{purple}{T1}\\
+        \hline
+        \hline
+        UT4 & Estructuras de datos I & \textcolor{teal}{T2}\\
+        \hline
+        UT5 & Estructuras de datos II & \textcolor{teal}{T2}\\
+        \hline
+        UT6 & Funciones & \textcolor{teal}{T2}\\
+        \hline
+        \hline
+        UT7 & Programación orientada a objetos & \textcolor{orange}{T3}\\
+        \hline
+        UT8 & Librerías & \textcolor{orange}{T3}\\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Relación UT/RA}
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+        \hline
+            & UT1  & UT2  & UT3  & UT4  & UT5   & UT6  & UT7   & UT8\\
+        \hline
+        RA1 & 10\% & 80\% & 10\% &      &       &      &       & \\
+        \hline
+        RA2 &      &      &      &      &       & 50\% & 50\%  & \\
+        \hline
+        RA3 &      &      & 90\% &      &       &      & 10\%  & \\
+        \hline
+        RA4 &      &      &      &      &       &      & 100\% & \\
+        \hline
+        RA5 &      &      &      &      & 100\% &      &       & \\
+        \hline
+        RA6 &      &      &      & 50\% & 40\%  &      &       &10\% \\
+        \hline
+        RA7 &      &      &      &      &       &      & 100\% & \\
+        \hline
+        RA8 &      &      &      &      &       &      &  & 100\% \\
+        \hline
+        RA9 &      &      &      &      &       &      &  & 100\% \\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Entregables}
+    \begin{tabular}{|l|l|l|l|l|}
+        \hline
+            & POT       & POP      & TEE       & TEP\\
+        \hline
+        UT1 & \ding{51} &          &           &\\
+        \hline
+        UT2 & \ding{51} &\ding{51} &           &\\
+        \hline
+        UT3 & \ding{51} &\ding{51} & \ding{51} & \ding{51}\\
+        \hline
+        UT4 & \ding{51} &\ding{51} &           & \\
+        \hline
+        UT5 & \ding{51} &\ding{51} &           & \\
+        \hline
+        UT6 & \ding{51} &\ding{51} & \ding{51} & \ding{51}\\
+        \hline
+        UT7 & \ding{51} &\ding{51} &           & \\
+        \hline
+        UT8 & \ding{51} &\ding{51} & \ding{51} & \\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\section{Otros aspectos}
+
+\begin{frame}{Material}
+    \begin{columns}
+        \begin{column}[t]{0.5\textwidth}
+            \begin{block}{Material obligatorio}
+                \begin{itemize}
+                    \item Cuaderno.
+                    \item Bolígrafo.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}[t]{0.5\textwidth}
+            \begin{block}{Material recomendado}
+                \begin{itemize}
+                    \item Disco duro externo USB.
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Horario}
+    \begin{tabular}{|l|l|l|l|l|l|}
+        \hline
+         & Lunes & Martes & Miércoles & Jueves & Viernes\\
+        \hline        
+        14:30 - 15:25 & & & & &\\
+        \hline
+        15:25 - 16:20 & & & & \textcolor{purple}{PRO} &\\
+        \hline
+        16:20 - 17:15 & & & & \textcolor{purple}{PRO} &\\
+        \hline
+        17:15 - 17:45 & {\tiny Recreo} & {\tiny Recreo} & {\tiny Recreo} & {\tiny Recreo} & {\tiny Recreo}\\
+        \hline
+        17:45 - 18:40 & & & & &\\
+        \hline
+        18:40 - 19:35 & & \textcolor{purple}{PRO} & \textcolor{purple}{PRO} & &\\
+        \hline
+        19:35 - 20:30 & & \textcolor{purple}{PRO} & \textcolor{purple}{PRO} & &\\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{IA}
+
+    {\Huge IA significa Inteligencia Artificial}
+\end{frame}
+
+\begin{frame}{Algo sobre ti}
+    \begin{enumerate}
+        \item ¿Cómo te llamas? ¿Cómo quieres que te llamen?
+        \item ¿En qué te has formado hasta ahora?
+        \item ¿Por qué quieres estudiar DAW?
+        \item ¿Cuál es tu hobby?
+        \item ¿Cuál es tu artista/grupo favorito de música?
+    \end{enumerate}
+\end{frame}
+
+
+\end{document}
