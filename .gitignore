@@ -7,6 +7,7 @@ htmlcov
 .coverage
 final-de-curso.md
 ut0/intro/*
+!ut0/intro/images
 !ut0/intro/slides.tex
 !ut0/intro/slides.pdf
 ut*/pop*/*
