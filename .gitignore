@@ -18,7 +18,7 @@ ut*/te*/*
 # !ut3/tee3.1/*.md
 # !ut3/tep3.1/*.md
 # !ut3/pop3.0/*.md
-# !ut3/pop3.1/*.md
+!ut3/pop3.1/*.md
 # !ut4/pop4.1/*.md
 # !ut5/pop5.1/*.md
 # !ut6/tee6.1/*.md
