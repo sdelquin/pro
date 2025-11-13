@@ -6,7 +6,17 @@
 
 ## Comienzo
 
-`pypas get play-tennis`
+Cambia a la carpeta adecuada:
+
+```console
+mkdir -p ~/pro/ut3/tep3.1 && cd ~/pro/ut3/tep3.1
+```
+
+Descarga el ejercicio:
+
+```console
+pypas get play-tennis
+```
 
 ## Entrega
 

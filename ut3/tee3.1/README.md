@@ -6,13 +6,13 @@
 
 ## Comprimir los ejercicios
 
-- Cambia a la carpeta adecuada:
+Cambia a la carpeta adecuada:
 
 ```console
 mkdir -p ~/pro/ut3/tee3.1 && cd ~/pro/ut3/tee3.1
 ```
 
-- Descarga y comprime todos los ejercicios que has subido durante este trimestre:
+Descarga y comprime todos los ejercicios que has subido durante este trimestre:
 
 ```console
 pypas pull t1 && zip -FSr t1.zip t1
