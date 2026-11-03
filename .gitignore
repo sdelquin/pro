@@ -14,10 +14,9 @@ ut*/te*/*
 # Para resetear comentar de aquí para abajo
 !ut2/pops2/*.md
 !ut2/pop2/*.md
-# !ut3/tee3/*.md
 # !ut3/pops3/*.md
 # !ut3/tee3/*.md
-# !ut3/tep3/*.md
+!ut3/tep3/*.md
 # !ut3/pop3/*.md
 # !ut4/pop4/*.md
 # !ut5/pop5/*.md
